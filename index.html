@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        *{
+    margin : 0;
+    padding : 0; 
+    box-sizing  : border-box;
+}
+@font-face {
+    font-family: GlowBetter;
+    src: url(GlowBetter-jEeLO.otf);
+} 
+
+
+html , body {
+   height : 100%;
+   width : 100%;
+   font-family: 'Open Sans', sans-serif;
+   scroll-behavior: smooth;
+}
+.main{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.main a{
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+    color: inherit;
+    font-size: .8vmax;
+
+  
+}
+.main li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: red; */
+    /* margin: 0 10px; */
+}
+
+.one{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("	https://html.dynamiclayers.net/it/alison/img/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.one .resMenu{
+    list-style-type: none;
+    background-color: rgb(252, 252, 252);
+    position: absolute;
+    top: 11%;
+
+    color: rgb(77, 77, 77);
+
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vmax;
+    transition: .4s all ease-in-out;
+
+    width: 90%;
+    height: 20%;
+
+    opacity: 0;
+} 
+
+.one .resMenu li{
+    font-size: 2vmax;
+}
+
+.one .resOneIcon{
+    font-size: 3.5vmax;
+    display: none;
+}
+
+
+.one .navBar{
+
+    color: #fff;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vmax;
+
+    position: absolute;
+    top: 0;
+
+}
+
+.one .navBar ul{
+    display: flex;
+    list-style: none;
+}
+.one .navBar > h1{
+    transition: .3s all ease-in-out ;
+    font-family: GlowBetter;
+    font-size: 2.5vmax;
+    letter-spacing:2px;
+}
+.one .navBar > h1:hover{
+    opacity: .9;
+    scale:.90;
+}
+.one .navBar li{
+    font-size: .6vmax;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0 1.5vmax;
+    position: relative;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+    padding-bottom: .5vmax;
+}
+.one .navBar li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    background-color: aqua;
+    transition: .3s all ease-in-out;
+}
+.one .navBar li:hover::after{
+    width: 100%;  
+}
+
+
+.one .center i:hover{
+    scale:1.5;
+    color: #ff5e5e;
+    /* background-color: #ff5e5e; */
+}
+.one .center a:hover{
+    scale:1.5;
+    color: #ff5e5e;
+}
+
+
+.one .center{
+    color: #fff;
+    height: 45vh;
+    width: 30vw;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.one .text{
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+
+    padding: 2vmax 0;
+}
+.one .icons{
+    color: rgb(223, 223, 223);
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vmax;
+}
+.one .center i{
+    margin: 0 1vmax;
+    transition: .2s all ease-in-out;
+    font-size: 2vmax;
+}
+.one .center a{
+    transition: .3s all ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+.one .text h4{
+    font-size: 1vmax;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+}
+.one .text .autoswipe{
+    height: 7vmax;
+    width: 25vmax;
+    overflow: hidden;
+}
+
+.autoswipe .swiper {
+    width: 100%;
+    height: 100%;
+
+  }
+
+.autoswipe .swiper-slide {
+    text-align: center;
+    font-size: 6vmax;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.autoswipe .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.one .text p{
+    width: 80%;
+    letter-spacing: .3px;
+}
+
+
+
+
+.two{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+.two .left{
+    width: 42%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6vmax;
+    margin-left: -10%;
+}
+.two .right{
+    width: 42%;
+    height: 100%;
+    position: relative;
+}
+.two .right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.two .left h3{
+    
+    font-size: 3.5vmax;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+}
+.two .left p{
+    margin: 2vmax 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.two .left button{
+    margin-top: 1vmax;
+    width: 12vmax;
+    color: #fff;
+    padding: 1vmax 2vmax;
+    background-color: #ff4c4c;
+    font-weight: 900;
+    font-size: .8vmax;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.two .scroller{
+    height: 20%;
+    width: 160%;
+    position: absolute;
+    bottom:15%;
+    right: 0%;
+    color: white;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+
+    
+}
+.two .scroller h1{
+
+    display: inline-block;
+
+    margin-left: 30px;
+    font-weight: 900;
+    font-size: 9vmax;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    animation-name: codess;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+.two .scroller::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes codess{
+    0%{
+        transform: translateX(calc(-100% - 32px));
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+/* third page */
+
+.third{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://html.dynamiclayers.net/it/alison/img/services-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+}
+.third .left{
+    color: #fff;
+    width: 35%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6vmax;
+
+
+}
+.third .left > h3{
+    margin: 1vmax 0;
+    font-size: 4.5vmax;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.third .right{
+    height: 100%;
+    width: 65%;
+    padding: 10vmax 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.third .box{
+    color: #fff;
+    /* display: inline-block; */
+    display: flex;
+    width: 18vw;
+    height: 16vw;
+    background-color: rgba(255, 255, 255, 0.152);
+    /* background-color: #fff; */
+    /* opacity: .2; */
+    margin: 1vmax;
+    padding-left: 1vmax;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .4s all ease-in-out;
+}
+/* .third .box .hov{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    opacity: 1;
+} */
+.third .box:hover{
+    background-color: rgba(255, 255, 255, 0.452);
+    scale:1.1;
+}
+.third .box i{
+
+    font-size: 4vmax;
+    font-weight: 100;
+    color: #ff4c4c;
+    margin-bottom: 2vmax;
+}
+.third .box h4{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.four{
+    height: 77vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+}
+
+.four .left{
+    color: #fff;
+    width: 35%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6vmax;
+
+
+}
+
+.four .left h3{
+
+    font-size: 2.5vmax;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+}
+.four .left p{
+    margin: 1vmax 0;
+
+}
+.four .left button{
+    margin-top: 1vmax;
+    width: 12vmax;
+    color: #fff;
+    padding: 1vmax 2vmax;
+    background-color: #ff4c4c;
+    font-weight: 900;
+    font-size: .8vmax;
+    letter-spacing: 1px;
+    border: none;
+}
+.four .right{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.four .right .box{
+    height: 21vmax;
+    width: 21vmax;
+
+    
+
+    margin: .2vmax;
+
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    transition: .4s all ease-in-out;
+
+}
+.four .box .hov{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2vmax;
+    color: rgb(84, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s all ease-in-out;
+    opacity: 0;
+}
+.four .hov:hover{
+    opacity: 1;
+}
+.four .right .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.five{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+.five h1{
+    width:60%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5vmax;
+    text-transform: uppercase;
+}
+.five button{
+    margin-top: 2vmax;
+    width: 13vmax;
+    color: #fff;
+    padding: 1vmax 2vmax;
+    background-color: #ff4c4c;
+    font-weight: 300;
+    font-size: .8vmax;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.six{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    color: #fff;
+    background-color: #000;
+
+
+}
+.six .left{
+    width: 50%;
+    height: 100%;
+    padding: 0 6vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.six .right{
+    width: 50%;
+    height: 100%;
+    transition: .6s all ease-in-out;
+    border-radius: 3vmax;
+    overflow: hidden;
+
+
+}
+.six .right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: saturate(.3);
+
+}
+.six .left h1{
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5vmax;
+    margin-bottom: 2vmax;
+}
+.six .det{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.six input{
+    color: #fff;
+    padding: auto;
+    background-color: transparent;
+    border: none;
+    width: 40%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 1vmax;
+    margin: 2vmax 0;
+    
+}
+.six .msg{
+    width: 100%;
+}
+.six button{
+    margin-top: 2vmax;
+    width: 13vmax;
+    color: #fff;
+    padding: 1vmax 2vmax;
+    background-color: #ff4c4c;
+    font-weight: 300;
+    font-size: .8vmax;
+    letter-spacing: 1px;
+    border: none;
+}
+.main button{
+    overflow: hidden;
+    border-radius: 2vmax;
+    background-color: #ff4c4c;
+    position: relative;
+    z-index: 200;
+    transition: .5s all ease-in-out;
+}
+.main button::before{
+    z-index: 1;
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    background-color: #fff;
+    transition: .5s all ease-in-out;
+    top: 0%;
+    left: 0%;
+    border-radius: 2vmax;
+
+}
+
+.main button:hover::before{
+    width: 100%;
+    z-index: -10;
+}
+.main button:hover{
+    color: #000;
+}
+
+.six .right:hover{
+    scale:.9;
+}
+.six .left input:focus{
+    outline: none;
+}
+
+
+
+@media (max-width:430px) {
+    .main{
+        overflow: hidden;
+    }
+    .one .navBar {
+       padding: 3vmax;
+    }
+    .one .center .icons{
+        font-size: 3vmax;
+    }
+    .one .navBar ul{
+        display: none;
+    }
+    .one .resOneIcon{
+        display: initial;
+    }
+    .one .center{
+        width: 100vw;
+        height: 40vh;
+    }
+    .one .center h4{
+        font-size: 2vmax;
+    }
+
+    .two{
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .two .left{
+      
+        width: 100%;
+        margin-left:-35%;
+        padding-left: 10px;
+        margin-top: 1vmax;
+    }
+    .two .left p{
+        width: 70%;
+        font-size: 1.3vmax;
+    }
+    .two .scroller{
+        width: 100vw;
+        /* rotate: -20deg; */
+        overflow: initial;
+        bottom: 40%;
+    }
+    .two .right{
+        margin-left: 35%;
+    }
+    .third{
+        flex-direction: column;
+        height: 125vh;
+
+    }
+    .third .left{
+        margin: 1vmax 0;
+        padding: 0;
+        height: 10vh;
+    }
+    .third .right{
+        height: 153vh;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        margin:2vmax auto;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .third .right .box{
+        height: 13vh;
+        width: 80%;
+        padding-left: 3vmax;
+        align-items: flex-start;
+        margin:2vmax auto;
+    }
+    .four{
+        display: none;
+    }
+    .five{
+
+        padding: 3vmax 0;
+        height: 30%;
+    }
+    .six{
+        flex-direction: column;
+
+    }
+    .six .left{
+
+        margin: 2vmax auto;
+        width: 100%;
+    }
+    .six .right{
+        margin: 1vmax auto;
+        width: 80%;
+    }
+    .main button{
+        font-size: 1.4vmax;
+
+        width: 18vmax;
+    }
+
+}
+    </style>
+
+    <title> Raushan | Portfolio</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- the website  =  http://preview.themeforest.net/item/alison-portfolio-html-template/full_screen_preview/23151102 -->
+
+        <div class="one">
+            <div class="navBar">
+                <h1>Raushan.</h1>
+                <ul>
+                    <a href="index.html">
+                        <li>
+                            <lord-icon src="https://cdn.lordicon.com/gmzxduhd.json" trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff" style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>HOME</p>
+                        </li>
+                    </a>
+
+                    <a href="about.html">
+                        <li>
+                               <lord-icon
+                                src="https://cdn.lordicon.com/wxnxiano.json"
+                                trigger="morph"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>ABOUT</p>
+                        </li>
+                    </a>
+
+                    <a href="project.html">
+                        <li>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/gqdnbnwt.json"
+                                trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>PROJECTS</p>
+                        </li>
+                    </a>
+
+
+                    <a href="contact.html">
+                        <li>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/zpxybbhl.json"
+                                trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>CONTACT</p>
+                        </li>
+                    </a>
+
+                </ul>
+                <i class="ri-menu-line resOneIcon"></i>
+            </div>
+
+            <div class="resMenu">
+
+                <a href="index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="about.html">
+                    <li>ABOUT</li>
+                </a>
+
+                <a href="project.html">
+                    <li>PROJECTS</li>
+                </a>
+                <a href="contact.html">
+                    <li>CONTACT</li>
+                </a>
+
+            </div>
+
+
+            <div class="center">
+                <div class="text">
+                    <h4>SOFTWARE DEVELOPER & WEB DEVELOPER</h4>
+                    <div class="autoswipe">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">DEVELOPER</div>
+                                <div class="swiper-slide">DESIGNER</div>
+                                <div class="swiper-slide">TRADER</div>
+                                <div class="swiper-slide">SINGER</div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                    <p>I’m a Creative Designer and I make things work.
+                        Turning your dreams into reality.</p>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/profile.php?id=100006877326522" target="_blank"><i
+                            class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/raush3019/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/raushan-kumar-99664621a/" target="_blank"><i
+                            class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="two">
+            <div class="left">
+                <h3>ABOUT ME</h3>
+                <p>Hi, I’m Raushan! I'm a web and software developer . I made a lot of projects
+                    websites that help organizations address business challenges and meet their needs. I manage
+                    everything from website navigation and layout to a company's web hosting and security architecture.
+                    My expertise lies within front-end , backend and the main languages in my tech stack are JavaScript,
+                    React, C++ programming language , Nodejs , Mongodb and HTML/CSS. I’m a lifelong learner and love to
+                    read. </p>
+                <!-- <p>Completely synergize resource taxing relationships premier niche markets. Professionally cultivate
+                    one-to-one customer service with robust ideas.</p> -->
+                <a href="about.html"><button>
+                        <h5>SEE ABOUT ME</h5>
+                    </button></a>
+            </div>
+            <div class="right">
+                <img src="https://html.dynamiclayers.net/it/alison/img/about-background.jpg" alt="">
+
+                <div class="scroller">
+                    <h1>CODE BEYOND IMAGINATION </h1>
+                    <h1> CODE BEYOND IMAGINATION </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="third">
+            <div class="left">
+                <h3> Skills ></h3>
+
+            </div>
+            <div class="right">
+                <div class="box">
+                    <i class="ri-stack-line"></i>
+                    <h4>UI/UX DESIGNER</h4>
+
+                </div>
+                <div class="box">
+                    <i class="ri-pencil-ruler-2-line"></i>
+                    <h4>DEVELOPMENT </h4>
+
+                </div>
+                <div class="box">
+                    <i class="ri-building-2-line"></i>
+                    <h4>TRADING</h4>
+
+                </div>
+                <div class="box">
+                    <i class="ri-smartphone-line"></i>
+                    <h4>RESPONIVE DESIGN</h4>
+
+                </div>
+                <div class="box">
+                    <i class="ri-bike-line"></i>
+                    <h4> MOTIVATIONAL <br> SPEAKER</h4>
+
+                </div>
+                <div class="box">
+                    <i class="ri-reactjs-line"></i>
+                    <h4>REACT JS</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="four">
+            <div class="left">
+                <p>I’m a Creative Designer and I make things work.
+                    Turning your dreams into reality.</p>
+                <a href="project.html"><button>
+                        <h5>SEE MY WORKS</h5>
+                    </button></a>
+            </div>
+            <div class="right">
+                <div class="box">
+                    <img src="1.png" alt="">
+                    <a href="project.html">
+                        <div class="hov">+</div>
+                    </a>
+
+                </div>
+                <div class="box">
+                    <img src="2.png" alt="">
+                    <a href="project.html">
+                        <div class="hov">+</div>
+                    </a>
+                </div>
+                <div class="box">
+                    <img src="3.png" alt="">
+                    <a href="project.html">
+                        <div class="hov">+</div>
+                    </a>
+                </div>
+                <div class="box">
+                    <img src="4.png" alt="">
+                    <a href="project.html">
+                        <div class="hov">+</div>
+                    </a>
+                </div>
+                <div class="box">
+                    <img src="5.png" alt="">
+                    <a href="project.html">
+                        <div class="hov">+</div>
+                    </a>
+                </div>
+                <div class="box">
+                    <img src="6.png" alt="">
+                    <a href="project.html">
+                        <div class="hov">+</div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="five">
+            <h1>Any fool can write code that a computer can understand. Good programmers write code that humans can
+                understand..</h1>
+            <a href="contact.html"> <button>
+                    <h5>CONTACT WITH ME</h5>
+                </button></a>
+        </div>
+
+        <div class="six" id="contact">
+
+            <div class="left">
+                <h1>LET'S WORK TOGETHER PROJECTS
+                    JUST SEND ME EMAIL HERE</h1>
+
+                <div class="det">
+                    <input class="name" type="text" placeholder="Name">
+                    <input class="email" type="email" placeholder="Email">
+                </div>
+                <input class="msg" type="text" placeholder="Message">
+                <a href="thankyou.html"><button>
+                        <h5>SEND MESSAGE</h5>
+                    </button></a>
+            </div>
+
+            <div class="right">
+                <img src="map.png" alt="">
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+        integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+    <script>
+        function show(){
+    gsap.registerPlugin(ScrollTrigger);
+
+// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true
+});
+// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+locoScroll.on("scroll", ScrollTrigger.update);
+
+// tell ScrollTrigger to use these proxy methods for the ".main" element since Locomotive Scroll is hijacking things
+ScrollTrigger.scrollerProxy(".main", {
+  scrollTop(value) {
+    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+  getBoundingClientRect() {
+    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+  },
+  // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+  pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
+});
+
+// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+ScrollTrigger.refresh();
+
+}
+
+show();
+
+var swiper = new Swiper(".mySwiper", {
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false
+  }
+});
+// document.querySelector("button").addEventListener("click",function(){
+//     document.querySelector("button").style.backgroundColor = "red";
+//     document.querySelector("button .line").style.width = "10vw";
+
+// })
+
+// gsap.to(".main .third .left>h3",{
+
+//   x:100,
+//   repeat:-1,
+//   duration:.6,
+//   yoyo:true,
+//   color:"#ff4c43"
+  
+// })
+
+gsap.to(".two .left",{
+  x:300,
+  scale:1.2,
+  duration:1,
+  scrollTrigger:{
+    trigger:".two .left",
+    scroller:".main",
+    scrub:true,
+
+  }
+})
+
+
+gsap.to(".third .right",{
+  // opacity:0,
+  scale:1.2,
+  duration:1,
+  scrollTrigger:{
+    trigger:".third .right",
+    scroller:".main",
+    scrub:true,
+    start:"top 30%",
+    // end:"top -90%",
+
+  }
+})
+
+gsap.from(".main .one .navBar",{
+  duration:1,
+  y:-100,
+})
+
+
+gsap.from(".main .one .center",{
+  duration:1,
+  scale:0,
+})
+
+
+let btn1 = 1;
+document.querySelector(".resOneIcon").addEventListener("click",function(){
+  if(btn1 === 1){
+    document.querySelector(".resMenu").style.opacity = "1";
+    btn1 = 0;
+  }
+  else{
+    document.querySelector(".resMenu").style.opacity = "0";
+    btn1 = 1;
+  }
+})
+    </script>
+</body>
+
+</html>

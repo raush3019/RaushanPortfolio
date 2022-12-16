@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raushan | Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <style>
+    @font-face {
+    font-family: GlowBetter;
+    src: url(GlowBetter-jEeLO.otf);
+} 
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .main {
+      min-height: 100vh;
+      width: 100vw;
+    }
+
+    .main .one .navBar>i {
+      display: none;
+    }
+
+    .one {
+      height: 120vh;
+      width: 100vw;
+      background-image: url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      position: relative;
+    }
+
+    .one .navBar {
+
+      color: rgb(255, 255, 255);
+      height: 10vh;
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5vmax;
+
+      background-color: rgba(0, 0, 0, 0.578);
+
+    }
+
+    .main a {
+      text-decoration: none;
+      transition: .3s all ease-in-out;
+      color: inherit;
+      font-size: .8vmax;
+
+    }
+
+    .one .navBar ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .one .navBar>h1 {
+      font-family: GlowBetter;
+    font-size: 3vmax;
+    letter-spacing: 2px;
+      transition: .3s all ease-in-out;
+    }
+
+    .one .navBar>h1:hover {
+      opacity: .9;
+      scale: .90;
+    }
+
+    .one .navBar li {
+      font-size: .6vmax;
+      font-weight: 100;
+      letter-spacing: 1px;
+      margin: 0 1.5vmax;
+      position: relative;
+      transition: .3s all ease-in-out;
+      cursor: pointer;
+      padding-bottom: .25vmax;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .one .navBar li::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      top: 90%;
+      left: 0%;
+      background-color: aqua;
+      transition: .3s all ease-in-out;
+    }
+
+    .one .navBar li:hover::after {
+      width: 100%;
+    }
+
+    .main .one .navBar>a {
+      display: none;
+    }
+
+    .one .box {
+      height: 80vh;
+      width: 35vw;
+      background-color: #fff;
+      border-radius: 5vmax;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .top {
+      padding-top: 30px;
+      text-align: center;
+      width: 100%;
+      height: 20%;
+    }
+
+    .top i {
+      font-size: 2vmax;
+      border: none;
+      background-color: royalblue;
+      color: #fff;
+      padding: 0.5vmax;
+      border-radius: 2vmax;
+    }
+
+    .top h2 {
+      margin-top: 1vmax;
+      font-size: 2vmax;
+    }
+
+    .mid {
+      width: 80%;
+      margin: 0 auto;
+      height: 60%;
+  
+    }
+
+    .mid .form {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form label {
+      color: grey;
+      /* background-color: green; */
+      margin-top: 1.5vmax;
+    }
+
+    .form input {
+      border: none;
+      border-bottom: 1px solid grey;
+
+      padding: 1vmax;
+      padding-left: 0;
+      font-size: 1.2vmax;
+      user-select: none;
+
+      margin-bottom: 0.7vmax;
+    }
+
+    .form input:focus {
+      outline: none;
+    }
+
+    .form button {
+      width: 30%;
+      padding: 1vmax 2vmax;
+      font-size: 1.2vmax;
+      border-radius: 1vmax;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: royalblue;
+      color: #fff;
+      margin-top: 2vmax;
+    }
+
+    .bottom {
+      width: 100%;
+      height: 20%;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2vmax 0;
+    }
+
+    .bottom i {
+      color: rgb(60, 81, 144);
+    }
+
+    .bottom i:nth-child(2) {
+      color: royalblue;
+    }
+
+    .bottom i:nth-child(3) {
+      color: rgb(255, 58, 36);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0%;
+      width: 100vw;
+      height: 12vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 12vw;
+      color: #fff;
+      background-color: rgb(0, 0, 0);
+
+    }
+
+    .footer i:hover {
+      transform: scale(1.5);
+      color: #ff5e5e;
+
+    }
+
+    .footer i {
+      margin: 0 1vmax;
+      transition: .2s all ease-in-out;
+      font-size: 2.5vmax;
+    }
+
+    .footer>a {
+      font-size: 1.6vmax;
+
+    }
+
+    @media (max-width:420px) {
+      .main .one {
+        height: 100vh;
+      }
+
+      .main .one .navBar>ul {
+        display: none;
+      }
+
+      .main .one .navBar>a {
+        font-size: 4vmax;
+        display: initial;
+      }
+
+      .one .box {
+        width: 85vw;
+        height: 60vh;
+      }
+
+      .main .one .navBar>i {
+        display: initial;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div class="one">
+
+      <div class="navBar">
+        <h1>Raushan.</h1>
+        <ul>
+          <a href="index.html">
+            <li>
+              <lord-icon src="https://cdn.lordicon.com/gmzxduhd.json" trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff" style="width:25px;height:25px">
+              </lord-icon>
+              <p>HOME</p>
+            </li>
+          </a>
+
+          <a href="about.html">
+            <li>
+              <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="morph"
+                colors="primary:#ffffff,secondary:#ffffff" style="width:25px;height:25px">
+              </lord-icon>
+              <p>ABOUT</p>
+            </li>
+          </a>
+
+          <a href="project.html">
+            <li>
+              <lord-icon src="https://cdn.lordicon.com/gqdnbnwt.json" trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff" style="width:25px;height:25px">
+              </lord-icon>
+              <p>PROJECTS</p>
+            </li>
+          </a>
+
+
+          <a href="contact.html">
+            <li>
+              <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff" style="width:25px;height:25px">
+              </lord-icon>
+              <p>CONTACT</p>
+            </li>
+          </a>
+
+        </ul>
+        <a href="index.html"><i class="ri-home-line resOneIcon"></i></a>
+      </div>
+
+
+
+      <div class="box">
+        <div class="top">
+          <i class="ri-user-line"></i>
+          <h2>Let's meet!</h2>
+        </div>
+
+        <div class="mid">
+          <div class="form">
+            <label for="Name">Name</label>
+            <input type="text" name="name" />
+
+            <label for="E-mail">E-mail</label>
+            <input type="email" name="email" />
+
+            <label for="Password">message</label>
+            <input type="text" name="password" />
+
+            <a href="thankyou.html"><button>Send<i class="ri-arrow-right-line"></i></button> </a>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <p>Or message me using social media!</p>
+
+          <h1>
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-instagram-fill"></i>
+          </h1>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href="index.html"> Raushan | Portfolio </a>
+        <div class="icons">
+          <a href="https://www.facebook.com/profile.php?id=100006877326522" target="_blank"><i
+              class="ri-facebook-fill"></i></a>
+          <a href="https://www.instagram.com/raush3019/" target="_blank"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.linkedin.com/in/raushan-kumar-99664621a/" target="_blank"><i
+              class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+    integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+
+  <script>
+    function show() {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+      const locoScroll = new LocomotiveScroll({
+        el: document.querySelector(".main"),
+        smooth: true
+      });
+      // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+      locoScroll.on("scroll", ScrollTrigger.update);
+
+      // tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
+      ScrollTrigger.scrollerProxy(".main", {
+        scrollTop(value) {
+          return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+        }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+        getBoundingClientRect() {
+          return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+        },
+        // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+        pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
+      });
+
+
+      // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+      ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+      // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+      ScrollTrigger.refresh();
+
+    }
+    show()
+
+    gsap.from(".main .one .navBar", {
+      duration: 1,
+      y: -100,
+    })
+
+
+    gsap.from(".main .one .box", {
+      duration: 1,
+      scale: 0,
+    })
+
+  </script>
+</body>
+
+</html>

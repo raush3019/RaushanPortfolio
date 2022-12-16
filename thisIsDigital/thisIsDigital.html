@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://www.citypng.com/public/uploads/small/11641513654yqwbmgtfzw5izq0w4kyftdwzrvkc7pcfjf4tvby9jwmr0tongh73m8onebbl6py8f3vtijhjpl2k6mak62yedgjkpnoldcgalcnd.png"  type="image/x-icon">
+    <title>This is Digital | Digital Performance</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: cooper, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.main button{
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: .6vmax 1.5vmax;
+    border-radius: 3vmax;
+    /* margin: 0 2vmax; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    font-size: 1.2vmax;
+    font-weight: 100;
+    background-color: transparent;
+    border: 1px solid rgb(114, 114, 114);
+
+}
+
+
+
+
+/* first pagge  */
+
+.one {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.one .navBar {
+    position: relative;
+    z-index: 2000;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vmax;
+    font-size: 1vmax;
+}
+.one .menu{
+    /* display: none; */
+    position: absolute;
+    height: 100%;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(-120%);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+
+}
+
+.one .menu h1{
+    font-weight: 100;
+    font-size: 3vmax;
+    margin: 3vmax 0;
+}
+.one .menu button{
+    font-weight: 100;
+    font-size: 2vmax;
+    font-weight: 100;
+    margin: 6vmax 0;
+    padding: 1vmax 3vmax;
+}
+.one .navBar .resIcon{
+    display: none;
+}
+.one .navBar .crossIcon{
+    font-size: 2.5vmax;
+    /* display: none; */
+}
+.main .one .navBar button i{
+    color: rgb(6, 6, 6);
+    margin-left: .8vmax;
+    font-size: 1.5vmax;
+    font-weight: 100;
+
+}
+
+.navBar>h1 {
+    position: relative;
+    font-weight: 400;
+    transition-property: all;
+    transition: ease-in-out;
+    transition-duration: .3s;
+}
+
+.navBar>h1 i {
+    position: absolute;
+    bottom: 16%;
+    right: -4%;
+    font-size: .5vmax;
+    font-weight: 400;
+    color: #90f4a6;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .56vmax;
+
+}
+
+.navBar ul h1 {
+    display: flex;
+    margin: 0 1.8vmax;
+    font-weight: 100;
+
+}
+
+.one .center {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.one .center .text {
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+.one .center .text h1 {
+    font-size: 4.5vmax;
+    font-weight: 200;
+}
+
+.one .center .text span{
+    position: relative;   
+}
+.one .center .text span img{
+    height: 1.3vmax;
+    position: absolute;
+    top: 84%;
+    left: -1%;
+    
+}
+
+.one .center .text h3 {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight: 400;
+    font-size: 1.8vmax;
+    width: 32%;
+    margin: 3vmax auto;
+}
+.one .center .text h3 button{
+    position: relative;
+    font-weight: 400;
+    font-size: 1.8vmax;
+    color: black;
+}
+.one .center .text h3 button i{
+    color: black;
+}
+
+.one .center .text img {
+    position: absolute;
+    top: 63%;
+    left: 30%;
+    height: 1.4vmax;
+}
+
+.one img {
+    position: absolute;
+    height: 30vmax;
+}
+
+.one .imgL {
+    position: absolute;
+    height: 33vmax;
+    left: 4%;
+}
+
+.one .imgT {
+    position: absolute;
+    top: 0%;
+    right: 20%;
+    height: 16vmax;
+}
+
+.one .imgR {
+    position: absolute;
+    height: 20vmax;
+    bottom: 10%;
+    right: 6%;
+}
+
+
+
+
+
+/* second page */
+
+
+.two {
+    width: 100vw;
+    height: 60vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.two h5 {
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1.2vmax;
+    font-weight: 300;
+}
+
+.two p {
+
+    margin: 2.5vmax 0;
+    font-size: 3vmax;
+    line-height: 4vmax;
+    text-align: center;
+    width: 55%;
+    font-weight: 100;
+}
+
+.two h4 {
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1.5vmax;
+    font-weight: 400;
+    width: 11vmax;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.main .two button i{
+
+    color: rgb(255, 255, 255);
+}
+
+.two span {
+    position: relative;
+}
+
+.two p span img {
+    position: absolute;
+    height: 5vmax;
+    left: -6%;
+    top: -30%;
+}
+
+
+
+
+/* third page  */
+
+.three {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.three .left {
+    position: relative;
+    height: 100vh;
+    width: 50vw;
+}
+
+.three .left .imgOne {
+    position: absolute;
+    height: 65vh;
+    left: 0;
+    top: 0;
+
+}
+
+.three .left .imgTwo {
+    position: absolute;
+    height: 31vh;
+    left: 0;
+    top: 70%;
+
+}
+
+.three .left .imgThree {
+    position: absolute;
+    left: 28%;
+    top: 0;
+    height: 30vh;
+    width: 28vw;
+    object-fit: cover;
+
+}
+
+.three .left .imgFour {
+    position: absolute;
+    left: 28%;
+    top: 35%;
+    height: 75vh;
+
+}
+
+
+.three .right {
+    margin-left: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 40vw;
+
+}
+
+.three .right h1 {
+
+    margin: 2.5vmax 0;
+    font-size: 3.5vmax;
+    line-height: 4vmax;
+
+    font-weight: 100;
+}
+
+.three .right h1 span {
+
+    position: relative;
+}
+
+.three .right h1 span img {
+
+    position: absolute;
+    height: .9vmax;
+    top: 90%;
+    left: 0%;
+}
+
+.three .right p {
+    color: #000;
+    margin: 1vmax 0;
+    font-size: 1.2vmax;
+    line-height: 2.5vmax;
+    width: 90%;
+    font-weight: 300;
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.three .right .profile {
+    margin-top: 1vmax;
+    display: flex;
+    align-items: center;
+    width: 30vmax;
+}
+
+.three .right button i{
+   margin-left: .5vmax;
+}
+
+.three .right .profile img {
+    height: 4vmax;
+    width: 4vmax;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.three .right .profile h2 {
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1.3vmax;
+    font-weight: 400;
+    margin: 0 2vmax;
+}
+
+
+/* four page   */
+
+
+.four {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vmax 0;
+}
+
+.four h1 {
+    margin-top: 4vmax;
+    font-size: 2.8vmax;
+    line-height: 4vmax;
+    font-weight: 100;
+    width: 50%;
+    text-align: center;
+}
+
+.four h4 {
+    font-size: 1.1vmax;
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    /* background-color: rgba(197, 249, 197, 0.592); */
+    font-weight: 500;
+    padding: 1vmax;
+    color: rgb(69, 69, 69);
+}
+
+.four span {
+    position: relative;
+}
+
+.four span img {
+    position: absolute;
+    width: 8.2vmax;
+    left: -10%;
+    top: -6%;
+}
+
+.four .mid {
+    margin: 3vmax 0;
+    height: 80%;
+    width: 80%;
+    /* align-items: center;
+    justify-content: center; */
+    white-space: wrap;
+    /* background-color: red; */
+    padding: 0;
+}
+
+.four .mid img {
+    margin: 2vmax 2vmax;
+    height: 3.4vmax;
+}
+
+
+/* five page  */
+
+.five {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.five .top {
+    display: flex;
+    height: 50%;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.five .top .left {
+    height: 100%;
+    width: 48%;
+    background-image: url("https://images.unsplash.com/photo-1597369237991-5c95d1b6e0c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    padding: 3vmax;
+    display: flex;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 1) inset;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.five .top .right {
+    height: 100%;
+    width: 48%;
+    background-image: url("https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1768&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    padding: 3vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 1) inset;
+
+}
+
+.five .top img {
+    height: 3vmax;
+    width: 10vmax;
+}
+
+.five .top .data {
+
+    margin-top: 10vmax 0;
+    color: #fff;
+
+}
+
+.five .top .data h1 {
+    font-size: 2.3vmax;
+    font-weight: 200;
+    margin-bottom: 1.5vmax;
+}
+
+.five .top .data h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 17vmax;
+    font-size: 1.5vmax;
+    font-weight: 400;
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.five .top .data h2 i{
+    color: #fff;
+}
+.five .top .data h2 button{
+    border:1px solid white
+}
+
+.five .bottom {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    margin-top: 2.5vmax;
+}
+
+.five .bottom img {
+    height: 4vmax;
+    width: 4vmax;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.five .bottom h2 {
+    margin: 0 2vmax;
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+    font-weight: 300;
+}
+
+.five .bottom button {
+    padding: .8vmax 1vmax;
+    width: 9vmax;
+}
+
+
+
+
+
+/* six page  */
+
+.six {
+    height: 85vh;
+    width: 100vw;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+}
+
+.swiper {
+    width: 80%;
+    height: 80%;
+
+}
+
+.swiper-slide {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    
+}
+
+.swiper-slide img {
+    height: 5vmax;
+}
+
+.swiper-slide h2{
+    margin: 2vmax 0;
+    font-size: 3.5vmax;
+    text-align: center;
+    font-weight: 100;
+    width: 60%;
+
+}
+.swiper-slide h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vmax;
+    font-weight: 300;
+}
+.swiper-slide h4{
+    margin: .5vmax 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vmax;
+    font-weight: 300;
+    color: rgb(151, 151, 151);
+}
+
+
+
+/* seventh page  */
+
+.seventh{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+.seventh .top{
+    width: 100vw;
+    height: 20vh;
+    background-color: #fff;
+}
+.seventh .bottom .overflow{
+    top:-30%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 60vw;
+    height: 40vh;
+    background-image: url("https://images.unsplash.com/photo-1522027665652-ee10c408bd1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2875&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 1) inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    transition-timing-function: ease-in-out;
+}
+.seventh .bottom{
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.seventh .overflow h1{
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    width: 90%;
+    font-size: 2vmax;
+    margin-bottom: 2vmax;
+}
+.seventh .profile {
+    color: #fff;
+    margin-top: 1vmax;
+    display: flex;
+    align-items: center;
+}
+.seventh .profile img {
+    height: 4vmax;
+    width: 4vmax;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.seventh .profile h2 {
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1.5vmax;
+    font-weight: 400;
+    margin: 0 2vmax;
+}
+.seventh .profile button{
+    border:1px solid white;
+    color:#fff;
+}
+.seventh .profile button i{
+    margin-left: .5vmax;
+    color:#fff;
+}
+.seventh .mid{
+    color: #fff;
+    padding-top: 2vmax;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.seventh .mid h1{
+    margin-bottom: 2vmax;
+    width: 70%;
+    font-size: 3.5vmax;
+    font-weight: 300;
+}
+.seventh .mid .a h2{
+    margin-top: 2vmax;
+    display: flex;
+    justify-content: space-between;
+    width: 11vmax;
+    align-items: center;
+}
+.seventh .mid .a button{
+    color: #fff;
+    border:1px solid white;
+}
+.seventh .mid .a button i{
+    color: #fff;
+}
+
+
+.seventh .mid h1 span{
+    position: relative;
+}
+.seventh .mid h1 span img{
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    height: 5.3vmax;
+}
+
+.seventh .mid h2{
+    margin-bottom: 2vmax;
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+ 
+    font-size: 1.5vmax;
+    font-weight: 400;
+}
+
+.seventh .mid h4{
+    margin:1vmax;
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    color: rgb(102, 102, 102);
+    font-size: 1.2vmax;
+    font-weight: 200;
+}
+.seventh .c{
+    margin: 0 4vmax;
+}
+.seventh .e img{
+    margin: 1vmax 0;
+}
+.seventh .e{
+    margin-top: -2.5vmax;
+    margin-left:4vmax;
+    display: flex;
+    flex-direction: column;
+}
+.seventh .e img:nth-child(1){
+    height: 5vmax;
+}
+.seventh .e img:nth-child(2){
+    margin: 0 auto;
+    height: 9vmax;
+    width: 9vmax;
+    object-fit: cover;
+}
+.seventh .e img:nth-child(3){
+    height: 4vmax;
+
+}
+
+.seventh .footer{
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    border-top: 1px solid #808080;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.seventh .footer h5{
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.5vmax;
+    font-weight: 100;
+}
+.seventh .footer ul i{
+    color: #fff;
+}
+.seventh .footer h5 i{
+    font-size: .4vmax;
+    margin-bottom: .3vmax;
+    color: #90f4a6;
+}
+.seventh .footer ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+.seventh .footer ul li{
+    margin: 0 1vmax;
+    font-size: .98vmax;
+    color: #808080;
+}
+
+.main button i{
+    color: black;
+}
+
+
+/* button part  */
+.main button::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left: 0%;
+    background-color: rgb(115, 219, 99);
+    transition: 0.3s all ease;
+    z-index: -1;
+    cursor: pointer;
+}
+.main button:hover::before {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* hover part  */
+
+.one .navBar ul h1:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #90f4a6;
+}
+.one .navBar > h1:hover{
+    scale:.95;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.seventh .b h4:hover,.seventh .c h4:hover, .servicesContent h4:hover{
+    cursor: pointer;
+    border-bottom: 1px solid #90f4a6;
+}
+
+.main .one .servicesContent{
+    margin: 0 auto;
+    border-top: .5px solid rgb(176, 176, 176);
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    height: 25vh;
+    left: 0vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10vw;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.main .one .servicesContent ul{
+    display: flex;
+    flex-direction: column;
+
+}
+.main .one .servicesContent h4{
+    margin: .8vmax 0;
+    font-size: 1.5vmax;
+    font-weight: 100;
+    padding-bottom: .2vmax;
+}
+
+
+
+
+
+/* responsive part  */
+
+
+@media (max-width:430px) {
+    .one .navBar ul{
+        display: none;
+    }
+    .one .navBar .resIcon{
+        font-size: 3vmax;
+        display: initial;
+    }
+    .one .imgT{
+        height: 0vmax;
+    }
+    .one .imgR{
+        height: 0vmax;
+    }
+    .main .one .center{
+        width: 100vw;
+        position: relative;
+        flex-direction: column;
+        /* align-items: center;  */
+        display: flex;
+        justify-content: space-between;
+    }
+    .one .imgL{
+        position: relative;
+        height: 100%;
+    }
+    .main .one .text{ 
+        position: relative;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 3vmax;
+        font-size: 1vmax;
+    }
+    .main .one .text h3{ 
+        align-items: center;
+        width: 40%;
+    }
+
+
+    .main .three{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main .three .left{
+        width: 100%;
+
+    }
+    .main .three .right{
+        padding-left: 5vmax;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .main .three .right p{
+        margin: 2vmax 0;
+        font-size: 1.8vmax;
+    }
+    .main .three .right .profile{
+        width: 65%;
+    }
+
+    .three .left .imgOne {
+        position: absolute;
+        height: 30vh;
+        left: 0;
+        top: 4%;
+    
+    }
+    
+    .three .left .imgTwo {
+        position: absolute;
+        height: 15vh;
+        left: 0;
+        top: 68%;
+    
+    }
+    
+    .three .left .imgThree {
+        position: absolute;
+        left: 23%;
+        top: 4%;
+        height: 15vh;
+        width: 50vw;
+        object-fit: cover;
+    
+    }
+    
+    .three .left .imgFour {
+        position: absolute;
+        left: 23%;
+        top: 39%;
+        height: 35vh;
+    }
+    .main .four .mid img{
+        height: 4vmax;
+    }
+    .main .four .mid{
+        text-align: center;
+    }
+
+
+    .main .five{position: relative;
+        justify-content: space-between;
+    }
+    .main .five .top{
+        position: absolute;
+        height: 90%;
+        flex-direction: column;
+    }
+    .main .five .top .left{
+        height: 85%;
+        width: 100%;
+    }
+    .main .five .top .right{
+        margin-top: 2vmax;
+        width: 100%;
+    }
+    .main .five .bottom{
+        height: 10%;
+        position: absolute;
+        bottom: 0%;
+    }
+
+    .main .seventh .overflow{
+        position: absolute;
+        width: 80vw;
+        height: 30vh;
+        top: -20%;
+    }
+    .main .seventh .mid{
+        flex-wrap: wrap;
+    }
+    .main .seventh .e{
+        margin-top: 2vmax;
+        flex-direction: row;
+        width: 80%;
+    }
+    .main .seventh .a{
+
+        margin: 2vmax 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .main .seventh .a h2{
+
+        align-items: center;
+        width: 30%;
+
+    }
+
+}  
+    </style>
+</head>
+<body>
+    <!-- <i class="ri-arrow-right-line"></i> -->
+    <div class="main">
+
+        <div class="one">
+            <div class="navBar">
+                <h1>this is digital <i class="ri-checkbox-blank-circle-fill"></i></h1>
+                <i class="ri-menu-3-fill resIcon"></i>
+
+                <ul>
+                    <h1 class="serviceBtn" >Services</h1>
+                    <h1>Work</h1>
+                    <h1>About</h1>
+                    <h1>Culture</h1>
+                    <h1>Careers</h1>
+                    <button>Contact us. <i class="ri-arrow-right-line"></i></button>
+                </ul>
+
+                <div class="servicesContent">
+                    <ul class="left">
+                        <h4>Digital Strategy</h4>
+                        <h4>Paid Search</h4>
+                        <h4>Paid Social</h4>
+                        <h4>CRO/UX</h4>
+                    </ul>
+                    <ul class="mid">
+                        <h4>SEO</h4>
+                        <h4>Content Strategy</h4>
+                        <h4>Digital PR</h4>
+                        <h4>Data & Analytics</h4>
+                    </ul>
+                    <ul class="right">
+                        <h4>Email </h4>
+                        <h4>Affiliate Marketing </h4>
+                        <h4>Programmatic Display</h4>
+                        <h4>Marketplaces</h4>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="center">
+                <div class="menu">
+                    <ul>
+                        <h1>Services</h1>
+                        <h1>Work</h1>
+                        <h1>About</h1>
+                        <h1>Culture</h1>
+                        <h1>Careers</h1>
+                        <button>Contact us. <i class="ri-arrow-right-line"></i></button>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h1>Digital Performance <span> Solutions<img src="https://thisisdigital.co.uk/dist/images/underline-green.svg" alt=""></span> </h1>
+                    <h3>Find out more <button><i class="ri-arrow-right-line"></i></button> </h3>
+                    
+                </div>
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-75.jpg?w=1200&h=1731&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631017685&s=333b9abfa858cf7b8685e28a597dfa08" alt="" class="imgL">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-23.jpg?w=1200&h=1008&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631003343&s=88354e145206a527c989b49f760a89d3" alt="" class="imgT">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-81.jpg?w=1200&h=1200&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631005177&s=21e4c0bb5ce83f57e69f404637d61265" alt="" class="imgR">
+            </div>
+
+        </div>
+
+        <div class="two">
+
+            <h5> <i class="ri-checkbox-blank-circle-fill"></i> A Digital Performance Solutions Agency in Manchester</h5>
+            <p>We combine network agency expertise, with a highly collaborative relationship. We’re a little <span>different<img src="	https://thisisdigital.co.uk/dist/images/circle-green.svg" alt=""></span>, This is Digital.</p>
+            <h4>About us <button><i class="ri-arrow-right-line"></i></button></h4>
+
+
+        </div>
+
+        <div class="three">
+            <div class="left">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-69.jpg?w=800&h=2518&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002290&s=33b3b284e2298e725e8837d662a3f3bd" alt="" class="imgOne">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-82.jpg?w=800&h=1200&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002337&s=2c36e03420200c6347fed613ee6ed7d3" alt="" class="imgTwo">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-10.jpg?w=1200&h=750&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002227&s=e9befa27c3cb6b4742db66b7d49131e1" alt="" class="imgThree">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-2.jpg?w=1200&h=1353&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002176&s=5d4bc2c79348dc9d5effc2ed0a267366" alt="" class="imgFour">
+            </div>
+            <div class="right">
+                <h1>Your <span>solution <img src="https://thisisdigital.co.uk/dist/images/underline-green.svg" alt=""> </span> to digital performance.</h1>
+                <p>We want to take the pressure off for you. Simple. Our digital performance solutions cover a range of digital channels and services to help you in every aspect of digital marketing. From strategic digital consultancy to in-channel management, we have the skills and experience to make significant commercial improvements to our clients’ digital presence.</p>
+                <div class="profile">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+                    <h2>Learn about more</h2>
+                    <button>Our Services <i class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="four">
+            <h1>Since <span>2018, <img src="	https://thisisdigital.co.uk/dist/images/circle-green.svg" alt=""> </span> we’ve partnered with some great brands.</h1>
+            <div class="mid">
+
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/AG.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358201&s=19390b505884286f2fc48977c2705767" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/BA.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358185&s=251ba5970df8be67b8bcf56be49d1418" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/Beaverbrooks.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358190&s=f094f0c6c3eebde60a214f67471b58d1" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/Brittany.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358192&s=4571e18ec4758315f6378cfbcd85b0b7" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/bruntwood.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358173&s=fc8b16eaaa208f842a98dbe3b7df140c" alt="">
+                
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/Footasylum.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358180&s=10a38429e9eab2416b290bfbb3a86340" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/Google.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358181&s=15f45f8c5f00b59980868ef93adcd94a" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/ISIF.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358182&s=0b5f75ce7faed09c2a0d728d91fd3fc4" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/Jollyes.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358174&s=2512c51711df9fc4c910c8c52860abc2" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/LCFC.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358178&s=9c2373f022b1020a731135133ff89fbc" alt="">
+
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/Man-Uni.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358193&s=9d36195f07e462959a828bb7b1208568" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/Rank.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358180&s=a7f3a9a7ed536ac68bb140130ed9484b" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/RS.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358183&s=60678f650c2378dced899f26844ffe3c" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/Ryman.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358194&s=98b18c3fab912a2d35ea223c2139a3c5" alt="">
+                <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-Black/Skin.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638358194&s=8ea47e706b77170826b6c61f602b5253" alt="">
+
+            </div>
+            <h4>The Fragrance Shop</h4>
+        </div>
+
+        <div class="five">
+            <div class="top">
+                <div class="left">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-White/AG.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638359995&s=be0db6389b405eb25baca6d0a95254a2" alt="">
+                    <div class="data">
+                        <h1>86% SEO visibility Increase for Europe's Largest Golf Retailer</h1>
+                        <h2>View Case Study <button><i class="ri-arrow-right-line"></i></button></h2>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/Logos-White/Ryman.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638360030&s=729fb4327b6b54d9ea4231a176d1a978" alt="">
+                    <div class="data">
+                        <h1>271% visibility Increase for Stationary Brand</h1>
+                        <h2>View Case Study <button><i class="ri-arrow-right-line"></i></button></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+                <h2>See more of</h2>
+                <button>Our Work <i class="ri-arrow-right-line"></i></button>
+            </div>
+        </div>
+
+        <div class="six">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/harley-med.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1626961103&s=c3842aeb963d3db29f993e4b0e6ae9fa" alt="">
+                    <h2>"We're seeing improvement in efficiencies of over 120% -and that was within two weeks!"</h2>
+                    <h3><i class="ri-checkbox-blank-circle-fill"></i> Marketing Director</h3>
+                    <h4>Harley Medical Group</h4>
+                </div>
+                  <div class="swiper-slide">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/footasylum-logo.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1626958236&s=884b0134b8f0a5bf871d3f77baa50de5" alt="">
+                    <h2>"This is Digital have brought a refreshing change to our digital agency relataionship."</h2>
+                    <h3><i class="ri-checkbox-blank-circle-fill"></i> eCommerce Director</h3>
+                    <h4>Footasylum</h4>
+                </div>
+                  <div class="swiper-slide">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/brittany-logo.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1626958235&s=f206a342824e1472533408006a36fc4a" alt="">
+                    <h2>"The highly experienced team take our objectives and turn them into real business result for the brand."</h2>
+                    <h3><i class="ri-checkbox-blank-circle-fill"></i> Head of Digital</h3>
+                    <h4>Brittany Ferries</h4>
+                
+                </div>
+                  <div class="swiper-slide">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/ryman-logo.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1626958233&s=c3b18a33ca9b123ca06c2048a73d0220" alt="">
+                    <h2>"All of their work has led to impressive results: for example our SEO visibility has increased over 150% in 5 months."</h2>
+                    <h3><i class="ri-checkbox-blank-circle-fill"></i>Marketing & eCommerce Director</h3>
+                    <h4>Ryman</h4>
+                
+                </div>
+                  <div class="swiper-slide">
+                    <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/LCFC-Big.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638360245&s=81701c1431f247310ca474760ca488b0" alt="">
+                    <h2>"They've been transformational, suffice to say, I can't recommend them highly enough!"</h2>
+                    <h3><i class="ri-checkbox-blank-circle-fill"></i> Head & Retail</h3>
+                    <h4>Leicestor City Football Club</h4>
+                
+                </div>
+                 
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+
+        </div>
+
+        <div class="seventh">
+            
+            <div class="top"></div>
+            <div class="bottom">
+                <div class="overflow">
+                    <h1>Call Demie on +44(0)161 509 0777 or email demie@thisisdigital.co.uk to discuss how we can help you.</h1>
+                    <div class="profile">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+                        <h2>Sound good ?</h2>
+                        <button>Request a callback <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="a">
+                        <h1>Become our <span> partner <img src="	https://thisisdigital.co.uk/dist/images/circle-green.svg" alt=""></span> today</h1>
+                        <h2>Let's talk <button> <i class="ri-arrow-right-line"></i></button> </h2>
+                    </div>
+                    <div class="b">
+                        <h2>Learn</h2>
+                        <h4>About</h4>
+                        <h4>Culture</h4>
+                    </div>
+                    <div class="c">
+                        <h2>Explore</h2>
+                        <h4>Work</h4>
+                        <h4>Services</h4>
+                        <h4>Careers</h4>
+                    </div>
+                    <div class="d">
+                        <h2>Find us</h2>
+                        <h4>Canavon Court</h4>
+                        <h4>12 Blackfriars St</h4>
+                        <h4>Manchester M3</h4>
+                        <h4>5BQ</h4>
+                    </div>
+                    <div class="e">
+                        <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/footer/edited/meta-white.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1643207768&s=49f73b7b0969e6e6ef4a62aef6d4955c" alt="">
+                        <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/footer/edited/google-premier-white.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1643891129&s=3e4388781cd26af80ea17a81304269f7" alt="">
+                        <img src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/logos/footer/edited/microsoft-2022-grey.png?w=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1643207640&s=5c70ba086b207adea61f2c1aff55be09" alt="">
+                    </div>
+
+                </div>
+                 <div class="footer">
+                    <h5>this is digital<i class="ri-checkbox-blank-circle-fill"></i> </h5>
+                    <ul>
+                        <li>© 2022 This is Digital - Digital Performance Solutions. All rights reserved.</li>
+                        <li>Privacy Policy</li>
+                        <li>Web Design </li>
+                        <li><i class="ri-instagram-line"></i></li>
+                        <li><i class="ri-linkedin-box-line"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js" integrity="sha512-ko44b+LlYXwGZI6Gey6Tgrhew9JEPdSE6m7FqDyGGPDW+dDOjsCElEtiUIRRtCXRNHwKheBCnHCQSMdUz/pgkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+function show(){
+    gsap.registerPlugin(ScrollTrigger);
+
+
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true
+});
+
+locoScroll.on("scroll", ScrollTrigger.update);
+
+
+ScrollTrigger.scrollerProxy(".main", {
+  scrollTop(value) {
+    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+  },
+
+  pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
+});
+
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+ScrollTrigger.refresh();
+
+}
+
+show();
+
+//service menu
+
+document.querySelector(".serviceBtn").addEventListener("mousemove",function(){
+  document.querySelector(".servicesContent").style.opacity = "1";
+})
+document.querySelector(".servicesContent").addEventListener("mouseleave",function(){
+  document.querySelector(".servicesContent").style.opacity = "0";
+})
+
+
+// menu of responsive 
+
+var chk = 0;
+document.querySelector(".main .one .navBar > i").addEventListener("click",function(){
+  if(chk === 0){
+    document.querySelector(".main .one .center .menu").style.transform ="translateY(0%)"
+    document.querySelector(".main").style.position = "fixed";
+    // document.querySelector(".main .one .menu").style.position = "fixed";
+    chk =1;
+  }
+  else{
+    document.querySelector(".main .one .center .menu").style.transform ="translateY(-120%)"
+    document.querySelector(".main").style.position = "relative";
+    // document.querySelector(".main .one .menu").style.position = "absolute";
+    chk = 0;
+  }
+  
+
+})
+
+
+
+
+
+// one page 
+
+gsap.from(".main .one .imgL",{
+  y:100,
+  opacity:0,
+  duration:1
+})
+gsap.from(".main .one .imgT",{
+  x:  100,
+  opacity:0,
+  duration:1
+})
+gsap.from(".main .one .imgR",{
+  y:-100,
+  opacity:0,
+  duration:1
+})
+gsap.from(".main .one .text",{
+  opacity:0,
+  duration:.9
+})
+
+// two page
+
+// gsap.to(".main>img",{
+
+//   scrollTrigger:{
+//         trigger:".main > img",
+//         scroller:".main",
+//         start:"top 5%",
+//         end : "top -380%",
+//         pin:true,
+//         scrub:1,
+//   },
+
+//   rotate:-15,
+//   stagger:0.05,
+// })
+
+
+gsap.from(".main .two h5",{
+  scrollTrigger:{
+    trigger:".two h5",
+    scroller:".main",
+    start:"top 80%",
+    // markers:true
+  },
+  opacity:0,
+  y:200,
+  duration:1
+
+})
+gsap.from(".main .two p",{
+  scrollTrigger:{
+    trigger:".two p",
+    scroller:".main",
+    start:"top 80%",
+    // markers:true
+  },
+  opacity:0,
+  y:200,
+  duration:1
+
+})
+gsap.from(".main .two h4",{
+  scrollTrigger:{
+    trigger:".two h4",
+    scroller:".main",
+    start:"top 80%",
+    // markers:true
+  },
+  opacity:0,
+  y:200,
+  duration:1
+
+})
+
+
+// third page 
+
+gsap.from(".main .three .imgOne",{
+  scrollTrigger:{
+    trigger:".three .imgOne",
+    scroller:".main",
+    start:"top 80%",
+    end:"top 0%",
+    
+    // markers:true
+    // scrub:2,
+  },
+  opacity:0,
+  x:-200,
+  duration:1
+
+})
+gsap.from(".main .three .imgTwo",{
+  scrollTrigger:{
+    trigger:".three .imgTwo",
+    scroller:".main",
+    start:"top 100%",
+    end:"top 0%",
+    // markers:true
+    // scrub:2,
+  },
+  opacity:0,
+  y:200,
+  duration:1
+
+})
+gsap.from(".main .three .imgThree",{
+  scrollTrigger:{
+    trigger:".three .imgThree",
+    scroller:".main",
+    start:"top 60%",
+    end:"top 0%",
+    // markers:true
+    // scrub:2,
+  },
+  opacity:0,
+  y:-200,
+  duration:1
+
+})
+
+gsap.from(".main .three .imgFour",{
+  scrollTrigger:{
+    trigger:".three .imgFour",
+    scroller:".main",
+    start:"top 100%",
+    end:"top 0%",
+    // markers:true
+    // scrub:2,
+  },
+  opacity:0,
+  x:200,
+  duration:1
+})
+
+
+
+
+gsap.from(".main .three .right .profile",{
+  scrollTrigger:{
+    trigger:".three .right .profile",
+    scroller:".main",
+    start:"top 90%",
+    end:"top 0%",
+    // markers:true
+  },
+  opacity:0,
+  y:100,
+  duration:1
+})
+
+
+// page four 
+
+gsap.from(".main .four > h1",{
+  scrollTrigger:{
+    trigger:".four > h1",
+    scroller:".main",
+    start:"top 90%",
+    end:"top 0%",
+    // markers:true
+  },
+  opacity:0,
+  y:80,
+  duration:1
+})
+
+
+// page five
+
+gsap.from(".main .five .top",{
+  scrollTrigger:{
+    trigger:".five .top",
+    scroller:".main",
+    start:"top 100%",
+    end:"top 0%",
+    // markers:true
+  },
+  opacity:0,
+  y:100,
+  duration:1
+})
+
+gsap.from(".main .five .bottom",{
+  scrollTrigger:{
+    trigger:".five .bottom",
+    scroller:".main",
+    start:"top 100%",
+    end:"top 0%",
+    // markers:true
+  },
+  opacity:0,
+  y:100,
+  duration:1
+})
+
+// page seven
+
+gsap.from(".main .seventh .overflow",{
+  scrollTrigger:{
+    trigger:".seventh .overflow",
+    scroller:".main",
+    start:"top 100%",
+    end:"top 0%",
+    // markers:true
+  },
+  opacity:-4,
+  // y:100,
+  duration:.1
+})
+
+
+
+
+
+function swipper(){
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+
+swipper();
+
+
+
+    </script>
+</body>
+</html>

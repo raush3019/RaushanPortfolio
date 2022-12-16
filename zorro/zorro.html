@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Links -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+
+    <!-- Links -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorro Design</title>
+    <style>
+        *{
+    margin : 0;
+    padding : 0; 
+    box-sizing  : border-box;
+}
+html , body {
+   height : 100%;
+   width : 100%;
+   background-color: #000;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100vw;
+    font-family: Nuckle, sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+
+.navBar{
+    width: 100vw;
+    height: 12vh;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vmax 2vmax;
+
+}
+
+.navBar ul{
+    display: flex;
+}
+
+.navBar img{
+    height: 90%;
+}
+.navBar li{
+    list-style: none;
+    margin: 0 1.5vmax;
+    font-size: 1.5vmax;
+    font-weight: 200;
+}
+
+.one{
+    height: 48vh;
+    width: 80vw;
+    margin:0 auto;
+    margin-top: 4vmax;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.one p{
+    font-size: 6vmax;
+    width: 70%;
+    font-weight: 900;
+
+
+}
+
+.one span{
+   font-family: Lostamasta, sans-serif;
+}
+.one button{
+    width: 17%;
+    border-radius: 4vmax;
+    border: none;
+    padding: 1vmax 2vmax;
+    font-size: 1.2vmax;
+    font-weight: 600;
+}
+
+
+
+
+
+.two{
+    width: 160vw;
+    height: 70vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.two .scrollBar > img{
+
+    width: 16%;
+    display: inline-block;
+    margin-right: 30px;
+    animation-name: scrolll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes scrolll {
+    0%{
+        
+        transform: translateX(calc(-100% - 32px));
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.two .scrollBar{
+    width: 100%;
+    top:35%;
+    left: 0;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0vh;
+
+    transform: perspective(1900px) rotateY(55deg); 
+}
+
+.two .scrollBar::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+.three{
+    width: 80vw;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.three .top{
+    font-size: 2.8vmax;
+}
+
+.three .bottom{
+    width: 50%;
+    font-size: 1.3vmax;
+    font-weight: 200;
+    margin-bottom: 2vmax;
+}
+.three .bottom button{
+    padding: 1vmax 2.5vmax;
+    border-radius: 4vmax;
+    border: none;
+    margin-top: 2vmax;
+    font-size: 1.2vmax;
+    font-weight: 600;
+}
+.three span{
+    font-weight: 800;
+}
+
+
+
+.four{
+    width: 80vw;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.four h1{
+    font-size: 3.5vmax;
+    font-family: Lostamasta, sans-serif;
+}
+.four p{
+    width: 40%;
+    font-size: 1.3vmax;
+    font-weight: 200;
+    text-align: center;
+    margin: 2vmax 0;
+}
+.four button{
+    padding: 1vmax 2.5vmax;
+    border-radius: 4vmax;
+    border: none;
+    font-size: 1.2vmax;
+    font-weight: 600;
+}
+
+
+
+.five{
+    height: 200vh;
+    width: 100vw;
+    border-top: solid 1px rgb(117, 117, 117);
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.five .container{
+
+    height: 100vh;
+    width: calc(100vw/3);
+    border-bottom: solid .3px rgb(117, 117, 117);
+    border-right: solid .3px rgb(117, 117, 117);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 2vmax;
+    position: relative;
+
+    overflow: hidden;
+    z-index: 200;
+    transition: .3s all ease-in-out;
+}
+
+.five .container h2{
+    font-size: 3vmax;
+    font-weight: 300;
+}
+.five .container p{
+    font-size: 1.2vmax;
+    font-weight: 300;
+    margin-top: 1vmax;
+    width: 60%;
+}
+.five .container i{
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    border: 1px solid rgb(255, 255, 255) ;
+    color: #fff;
+    font-size: 2vmax;
+    font-weight: 100;
+    padding: .5vmax;
+    border-radius: 5vmax;
+    transition: .3s all ease-in-out;
+}
+
+.five .container .befor{
+    content: "";
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    transition: .3s all ease-in-out;
+    z-index: -1;
+}
+.five .container .aftr{
+    content: "";
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transition: .3s all ease-in-out;
+    z-index: -1;
+}
+
+.five .container:hover .befor {
+    top: 0%;
+
+}
+.five .container:hover .aftr{
+    top: 50%;
+}
+.five .container:hover{
+    color: black;
+}
+.five .container:hover i{
+    color: black;
+    border-color:#000 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+.six{
+    height: 60vh;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: .3px solid grey;
+}
+
+.six h1{
+    margin-bottom: 2vmax;
+    font-size: 6vmax;
+    font-family: Lostamasta, sans-serif;
+}
+
+.six button{
+    padding: 1vmax 2.5vmax;
+    border-radius: 4vmax;
+    border: none;
+    font-size: 1.2vmax;
+    font-weight: 600;
+}
+
+.eight{
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 4vmax 0;
+}
+
+.eight > h1{
+    font-size: 4vmax;
+}
+
+.eight .swipperJs{
+    width: 180%;
+    height: 70%;
+    position: relative;
+}
+
+
+
+.eight .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.eight .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+  background: rgb(63, 61, 61);
+  border-radius: 1.5vmax;
+
+    padding: 3vmax;
+
+
+
+
+
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.eight .swiper-slide img{
+    height: 100%;
+    width: 40%;
+    border-radius: 1.5vmax;
+}
+.eight .swiper-slide .right{
+    width: 60%;
+    height: 100%;
+    margin-left: 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vmax 0;
+    text-align: left;
+}
+.eight .swiper-slide .pro{
+    font-size: 1vmax;
+    height: 3vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.nine{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nine img{
+    height: 5vmax;
+    display: inline-block;
+
+    margin-right: 30px;
+    animation-name: scrol;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes scrol {
+    0%{
+        
+        transform: translateX(calc(-100% - 32px));
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.nine .scrol{
+    width: 100%;
+    top:35%;
+    left: 0;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+}
+.nine .scrol::-webkit-scrollbar{
+    display: none;
+}
+.nine .mid{
+    margin: 3vmax 0;
+}
+.nine .mid img{
+    animation-duration: 12s;
+}
+
+
+
+
+
+.ten{
+    height: 160vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.ten > div{
+    width: 100%;
+    height: calc(100%/3);
+}
+.ten .top{
+
+    padding: 7vmax 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ten .top h1{
+    font-size: 5vmax;
+    font-weight: 800;
+
+}
+.ten .top p{
+    width: 23%;
+    text-align: center;
+    font-size: 1.3vmax;
+    font-weight: 200;
+}
+
+.ten .pattern{
+    display: flex;
+    align-items: center;
+}
+.ten .pattern .data{
+    height: 90%;
+    width: 30%;
+    padding-left: 3vmax;
+}
+.ten .pattern h1{
+    font-size: 9vmax;
+}
+.ten .pattern h3{
+    font-size: 2.5vmax;
+    font-weight: 200;
+}
+.ten .pattern p{
+    margin-top: 1vmax;
+    width: 85%;
+    font-size: 1.3vmax;
+    font-weight: 200;
+    line-height: 1.8vmax;
+
+}
+.ten span{
+    font-weight: 900;
+}
+
+.ten .bottom{
+    justify-content: flex-end;
+}
+
+
+.eleven{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmax;
+}
+
+
+.twelve{
+    width: 100vw;
+    height: 130vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid grey;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+.twelve h1{
+    font-size: 4vmax;
+}
+.twelve h3{
+    margin: 2vmax 0;
+    font-size: 2.2vmax;
+    font-weight: 300;
+}
+
+.twelve .btn button{
+    color: #fff;
+    background-color: transparent;
+    padding: .8vmax 1.9vmax;
+    font-size: .9vmax;
+    border-radius: 5vmax;
+    border: 1px solid #fff;
+    margin: 0 .7vmax;
+}
+
+.twelve > input{
+    margin-top: 2vmax;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+
+    width: 25%;
+    height: 3vmax;
+    border-radius: 5vmax;
+    
+}
+.twelve > input::placeholder{
+
+    color: #fff;
+    text-align: center;
+    padding: 1vmax 2vmax;
+}
+
+.twelve .msg{
+    border-radius: 0;
+    width: 25%;
+    height: 9vmax;
+}
+
+.twelve .smt{
+    font-size: 1.2vmax;
+    font-weight: 300;
+    margin-top: 2vmax;
+    padding: 1vmax 3vmax;
+    background-color: royalblue;
+    color: #fff;
+    border:none;
+    border-radius: 5vmax;
+}
+
+
+.footer{
+    width: 100vw;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+}
+
+.footer .content{
+
+    margin: 10vmax 3vmax;
+    font-size: 1.1vmax;
+    font-weight: 200;
+}
+.footer .content li{
+    list-style: none;
+    margin: .8vmax 0;
+    font-size: 1.1vmax;
+    font-weight: 200;
+}
+.footer .disclamer{
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    font-size: .8vmax;
+}
+.footer .disclamer h4{
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0 .4vmax;
+    color: grey;
+}
+
+
+
+/* animations div  */
+
+.main .seven{
+    width: 100vw;
+    height: 240vh;
+    position: relative;
+    z-index: 1000;
+
+}
+
+.main .seven .data{
+    width: 100vw;
+    height: 60vh;
+
+}
+
+.main .seven .data .top{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(186, 186, 186);
+    border-bottom: 1px solid rgb(186, 186, 186);
+}
+.main .seven .data p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vmax;
+}
+.main .seven .data span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    font-size: 3vmax;
+    margin-left: 1vmax; 
+}
+.main .seven .data i{
+    margin-left: .6vmax;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 7px;
+}
+.main .seven .data .bottom{
+    padding: 2vmax;
+    width: 100%;
+    height: 75%;
+    background-image: url("https://assets.website-files.com/62838db5e5cc597190f9a798/6297da56c77f0deb183e38db_web-development-project-rogue.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main .seven .data .bottom h1{
+    font-size: 6vmax;
+}
+
+
+.main .seven .a{
+    position: relative;
+    position: sticky;
+    top:0;
+}
+    </style>
+</head>
+<body>
+
+    <!-- https://www.zorro.design/     -->
+
+    <div class="main">
+
+        <div class="navBar">
+            <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/62d0e61212d3c8020807dc40_ZORRO.webp" alt="">
+            <div class="right">
+                <ul>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>icon</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="one">
+            
+            <p>Lightening Fast, Immersive, User <span>Experiences.</span> </p>
+            <button>Contact Us</button>
+
+        </div>
+
+        <div class="two">
+
+            <div class="scrollBar">
+
+                <img src="https://assets.website-files.com/6283b208859da3175c65b08c/62953583f3397308f16be768_webflow-web-design-services-p-1080.png" alt="">
+                <img src="https://assets.website-files.com/6283b208859da3175c65b08c/63495a5a8ca29513ec80d19e_10-p-1080.png" alt="">
+                <img src="https://assets.website-files.com/6283b208859da3175c65b08c/6295366e7991f1d375aca798_zorro-design-webflow-shopify-services.png" alt="">
+                <img src="https://assets.website-files.com/6283b208859da3175c65b08c/62953583f3397308f16be768_webflow-web-design-services-p-1080.png" alt="">
+                <img src="https://assets.website-files.com/6283b208859da3175c65b08c/62953583f3397308f16be768_webflow-web-design-services-p-1080.png" alt="">
+                <img src="https://assets.website-files.com/6283b208859da3175c65b08c/62953583f3397308f16be768_webflow-web-design-services-p-1080.png" alt="">
+                <img src="https://assets.website-files.com/6283b208859da3175c65b08c/6295367358020c0e91fba3e3_zorro-search-engine-optization-project.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="three">
+            <div class="top">
+                Our expert team works closely with clients to define, design and transform their brand's digital presence.
+            </div>
+            <div class="bottom">
+                <p>We are experienced artisans dedicated to the craftsmanship of blending stunning design with <span>flawless execution</span>. Our success is grounded in fostering a responsive <span> partnership</span> with each client.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <div class="four">
+            <h1>Our Services</h1>
+            <p>Our team has established a host of effective services to facilitate the growth of your business and bring your ideas to life.</p>
+            <button>View All</button>
+        </div>
+
+        <div class="five">
+            <div class="container">
+                <div class="befor"></div>
+                <div class="aftr"></div>
+                <h2>Web Design</h2>
+                <p>We specialize in web developing intractive , scalable , brand-oriented and buisness-ready customized web design</p>
+                <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="container">
+                <div class="befor"></div>
+                <div class="aftr"></div>
+                <h2>Web Design</h2>
+                <p>We specialize in web developing intractive , scalable , brand-oriented and buisness-ready customized web design</p>
+                <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="container">
+                <div class="befor"></div>
+                <div class="aftr"></div>
+                <h2>Web Design</h2>
+                <p>We specialize in web developing intractive , scalable , brand-oriented and buisness-ready customized web design</p>
+                <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="container">
+                <div class="befor"></div>
+                <div class="aftr"></div>
+                <h2>Web Design</h2>
+                <p>We specialize in web developing intractive , scalable , brand-oriented and buisness-ready customized web design</p>
+                <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="container">
+                <div class="befor"></div>
+                <div class="aftr"></div>
+                <h2>Web Design</h2>
+                <p>We specialize in web developing intractive , scalable , brand-oriented and buisness-ready customized web design</p>
+                <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="container">
+                <div class="befor"></div>
+                <div class="aftr"></div>
+                <h2>Web Design</h2>
+                <p>We specialize in web developing intractive , scalable , brand-oriented and buisness-ready customized web design</p>
+                <i class="ri-arrow-right-line"></i>
+            </div>
+        </div>
+
+
+        <div class="six">
+            <h1>Recent Projects</h1>
+            <button>View All</button>
+        </div>
+
+        <div class="seven">
+            
+            <div class="data a">
+
+                <div class="top">
+                    <p>Rougue & Rosy |<span> E-Commerce <i class="ri-arrow-right-line"></i></span></p>
+                </div>
+
+                <div class="bottom">
+                   <h1> Rogue & Rosy</h1>
+                </div>
+                
+            </div>
+
+
+
+            <div class="data b">
+                <div class="top">
+                    <p>Rougue & Rosy |<span> E-Commerce <i class="ri-arrow-right-line"></i></span></p>
+                </div>
+                <div class="bottom">
+                   <h1> Rogue & Rosy</h1>
+                </div>
+            </div>
+            <div class="data c">
+                <div class="top">
+                    <p>Rougue & Rosy |<span> E-Commerce <i class="ri-arrow-right-line"></i></span></p>
+                </div>
+                <div class="bottom">
+                   <h1> Rogue & Rosy</h1>
+                </div>
+            </div>
+            <div class="data d">
+                <div class="top">
+                    <p>Rougue & Rosy |<span> E-Commerce <i class="ri-arrow-right-line"></i></span></p>
+                </div>
+                <div class="bottom">
+                   <h1> Rogue & Rosy</h1>
+                </div>
+            </div>
+           
+            
+        </div>
+
+        <div class="eight">
+            <h1>Happy Clients</h1>
+
+            <div class="swipperJs">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">
+                            <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/6298cbfdbb538bcdc31d4b2d_zorro-web-design-customer-reviews.webp" alt="">
+    
+                            <div class="right">
+                                <p>"Loved working with Zorro! As novices in setting a website Jon was extremely patient with our team and adapted to all the pivots, gave us insights to design the website to what we are looking for."</p>
+    
+                                <div class="pro">
+                                    <h3>Shenkeri Chandramohan</h3>
+                                    <h5>Founder - Yuno Botanicals</h5>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+
+                            <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/6298cbfebf013c5ce681434b_zorro-web-design-client-reviews.webp" alt="">
+    
+                            <div class="right">
+                                <p>"Loved working with Zorro! As novices in setting a website Jon was extremely patient with our team and adapted to all the pivots, gave us insights to design the website to what we are looking for."</p>
+    
+                                <div class="pro">
+                                    <h3>Shenkeri Chandramohan</h3>
+                                    <h5>Founder - Yuno Botanicals</h5>
+                                </div>
+    
+                            </div>
+    
+                            </div>
+                        <div class="swiper-slide">
+
+                            <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/6298cbfead802b23aed35237_zorro-web-design-client-testimonials.webp" alt="">
+    
+                            <div class="right">
+                                <p>"Loved working with Zorro! As novices in setting a website Jon was extremely patient with our team and adapted to all the pivots, gave us insights to design the website to what we are looking for."</p>
+    
+                                <div class="pro">
+                                    <h3>Shenkeri Chandramohan</h3>
+                                    <h5>Founder - Yuno Botanicals</h5>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <!-- <div class="swiper-slide">Slide 6</div> -->
+                    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+              
+            </div>
+        </div>
+
+        <div class="nine">
+            <div class="top scrol">
+                <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/6286c132ed05494f5caa7f17_2.webp" alt="">
+                <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/6286c132ed05494f5caa7f17_2.webp" alt="">
+
+            </div>
+            <div class="mid scrol">
+                <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/6286c13263e480634894b139_3.webp" alt="">
+                <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/6286c13263e480634894b139_3.webp" alt="">
+            </div>
+
+            <div class="btm scrol">
+                <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/6286c132f84e66258c156c39_1.webp" alt="">
+                <img src="https://assets.website-files.com/62838db5e5cc597190f9a798/6286c132f84e66258c156c39_1.webp" alt="">
+            </div>
+        </div>
+
+        <div class="ten">
+            <div class="top">
+                <h1>Website Process</h1>
+                <p>Over the years, we’ve honed and adapted the way we work to create successful websites.</p>
+            </div>
+            <div class="mid pattern">
+                <div class="data">
+                    <h1>01</h1>
+                    <h3>Discovery</h3>
+                    <p>Project discovery starts with defining the project. At this phase, our team will conduct a kick-off meeting to define your product’s <span>unique value</span> proposition and learn about your brand's needs.</p>
+                </div>
+                <div class="data">
+                    <h1>02</h1>
+                    <h3>Design & Development</h3>
+                    <p>We design and develop your website using the <span>best practices</span> and standards, so you have a perfectly responsive, lightning-fast, SEO-friendly, and scalable website.</p>
+                </div>
+            </div>
+            <div class="bottom pattern">
+                <div class="data">
+                    <h1>03</h1>
+                    <h3>Testing</h3>
+                    <p>The purpose of the testing phase is to <span>thoroughly test</span> each page of the website, checking its structure, content, & functionality to ensure there are no errors or bugs.</p>
+                </div>
+                <div class="data">
+                    <h1>04</h1>
+                    <h3>Launch</h3>
+                    <p>Once you are happy with the entirety of the site, we will help you <span>launch it</span>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eleven">
+            <h1>Animations</h1>
+        </div>
+
+        <div class="twelve">
+
+            <h1>Start a Project</h1>
+
+            <h3>Service Type</h3>
+
+            <div class="btn">
+                <button>Web Design</button>
+                <button>Web Development</button>
+                <button>SEO</button>
+                <button>Visual Identity</button>
+                <button>Graphic Design</button>
+            </div>
+
+            <h3>Budget Estimation(USD)</h3>
+
+            <div class="btn">
+                <button>Under 5k</button>
+                <button>5k-15k</button>
+                <button>15k-25k</button>
+                <button>25k-50k </button>
+            </div>
+
+            <h3>How did you hear about us?</h3>
+
+            <div class="btn">
+                <button>Google</button>
+                <button>Webflow</button>
+                <button>Referral</button>
+                <button>Other</button>
+            </div>
+
+            <input type="text" placeholder="Enter Full Name" >
+            <input type="text" placeholder="Enter Email Address" >
+            <input type="text" class="msg" >
+
+            <button class="smt">Send Request</button>
+
+        </div>
+
+        <div class="footer">
+            <div class="content">
+                <h2>NAVIGATION</h2>
+                <li>Home</li>
+                <li>Projects</li>
+                <li>All Services</li>
+                <li>About Us</li>
+
+
+            </div>
+            <div class="content">
+                <h2>SERVICES</h2>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>SEO</li>
+                <li>Visual Identity</li>
+                <li>E-commerce</li>
+                <li>Graphic Design</li>
+            </div>
+            <div class="content">
+                <h2>SOCIAL</h2>
+                <li>Instagram</li>
+                <li>Facebook</li>
+
+            </div>
+
+            <div class="disclamer">
+                <h4>@</h4>
+                <h4>2022</h4>
+                <h4>ZORRO</h4>
+                <h4>DESIGN</h4>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
+function locomotive() {
+  gsap.registerPlugin(ScrollTrigger);
+
+// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true
+});
+// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+locoScroll.on("scroll", ScrollTrigger.update);
+
+// tell ScrollTrigger to use these proxy methods for the ".main" element since Locomotive Scroll is hijacking things
+ScrollTrigger.scrollerProxy(".main", {
+  scrollTop(value) {
+    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+  getBoundingClientRect() {
+    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+  },
+  // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+  pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
+});
+
+
+
+// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+ScrollTrigger.refresh();
+
+}
+  
+locomotive();
+</script>
+</body>
+</html>
+

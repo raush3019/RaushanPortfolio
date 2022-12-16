@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raushan | Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <style>
+        @font-face {
+    font-family: GlowBetter;
+    src: url(GlowBetter-jEeLO.otf);
+} 
+
+*{
+    margin : 0;
+    padding : 0; 
+    box-sizing  : border-box;
+}
+html , body {
+   height : 100%;
+   width : 100%;
+}
+.main{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    position: relative;
+}
+.main a{
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+    color: inherit;
+    font-size: .8vmax;
+}
+.one{
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("	https://images.unsplash.com/photo-1467649165350-bdae46d9779b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    position: relative;
+}
+
+
+.main .one .navBar > a{
+    display: none;
+    /* font-size: 4vmax; */
+}
+
+
+.one .navBar{
+
+    color: #fff;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vmax;
+    background-color: rgba(0, 0, 0, 0.615);
+
+}
+
+.one .navBar ul{
+    display: flex;
+    list-style: none;
+}
+.one .navBar > h1{
+    transition: .3s all ease-in-out ;
+
+    font-family: GlowBetter;
+    font-size: 3vmax;
+    letter-spacing: 2px;
+}
+.one .navBar > h1:hover{
+    opacity: .9;
+    scale:.90;
+}
+.one .navBar li{
+    font-size: .6vmax;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0 1.5vmax;
+    position: relative;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+    padding-bottom: .5vmax;
+}
+.one .navBar li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    background-color: aqua;
+    transition: .3s all ease-in-out;
+}
+.one .navBar li:hover::after{
+    width: 100%;  
+}
+
+.main .one .navBar > a{
+    display: none;
+}
+
+.one .center{
+    width: 100vw;
+    height: 90vh;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.one > h1{
+    color: rgb(0, 0, 0);
+    font-size: 3vmax;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3vmax;
+    padding:2vmax 3vmax;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.box{
+    width: 100%;
+    height: 70%;
+
+
+
+
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    border-radius: 3vmax;
+    height: 100%;
+
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 750px;
+    height: 550px;
+    border-radius: 3vmax;
+
+
+
+  }
+
+
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    width: 680px;
+    height: 430px;
+    border-radius: 3vmax;
+    overflow: hidden;
+  }
+
+.two{
+    width: 100vw;
+    height: 100vh;
+    background-color: #543675;
+}
+
+
+.mobileView{
+
+    position: absolute;
+    top: 40%;
+    display: none;
+    height: 225vh;
+    width: 100vw;
+    background-color: #000;
+
+}
+
+.mobileView .projImage img{
+    height: 25vh;
+    width: 80%;
+  
+    margin: 3vmax 0;
+    margin-left: 10%;
+}
+
+@media (max-width:420px) {
+
+    .main .one .navBar ul{
+        display: none;
+    }
+    .main .one .navBar > i{
+        display: initial;
+        font-size: 4vmax;
+    }
+    .main .one .navBar > a{
+        display: initial;
+        font-size: 4vmax;
+    }
+    .one > h1{
+        text-align: center;
+    }
+    .one > .center{
+        display: none;
+    }
+    .mobileView{
+        display: initial;
+    }
+   
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="one">
+
+            <div class="navBar">
+                <h1>Raushan.</h1>
+                <ul>
+                    <a href="index.html">
+                        <li>
+                            <lord-icon src="https://cdn.lordicon.com/gmzxduhd.json" trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff" style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>HOME</p>
+                        </li>
+                    </a>
+
+                    <a href="about.html">
+                        <li>
+                               <lord-icon
+                                src="https://cdn.lordicon.com/wxnxiano.json"
+                                trigger="morph"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>ABOUT</p>
+                        </li>
+                    </a>
+
+                    <a href="project.html">
+                        <li>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/gqdnbnwt.json"
+                                trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>PROJECTS</p>
+                        </li>
+                    </a>
+
+
+                    <a href="contact.html">
+                        <li>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/zpxybbhl.json"
+                                trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>CONTACT</p>
+                        </li>
+                    </a>
+
+                </ul>
+                <a href="index.html"><i class="ri-home-line resOneIcon"></i></a>
+            </div>
+
+
+            <h1>SOME OF WEB TEMPLATES (Non-responsive)</h1>
+            
+
+            <div class="center">
+                <div class="box">
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a target="_blank" href="https://raush3019.github.io/photographyRaushan/"> <img src="photographyRahul.png" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="https://raush3019.github.io/raushanixportfolio/"> <img src="anotherportfolio.png" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="/craftsman/craft.html"> <img src="1.png" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="/zorro/zorro.html"> <img src="2.png" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="/thisIsDigital/thisIsDigital.html"> <img src="3.png" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="/lagunitas/lagunitas.html"> <img src="4.png" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="/sketch/sketch.html"> <img src="5.png" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="/photographs/photography.html"> <img src="6.png" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="/consultancy/consultancy.html"> <img src="7.png" /></a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-prev hide-for-small-only hide-for-medium-only" style=" color:#000; background-color: rgb(255, 255, 255); padding: 3vmax; margin-left: 15vmax; "></div>
+                        <div class="swiper-button-next hide-for-small-only hide-for-medium-only" style=" color:#000; background-color: rgb(255, 255, 255); padding: 3vmax; margin-right: 15vmax; "></div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+
+
+        </div>
+
+        <div class="mobileView">
+
+            <div class="projImage">
+                <a target="_blank" href="photographyRaushan.html"> <img src="photographyRahul.png" /></a>
+            </div>
+            <div class="projImage">
+                <a target="_blank" href="craft.html"> <img src="1.png" /></a>
+            </div>
+
+            <hr>
+            <div class="projImage">
+                <a target="_blank" href="zorro.html"> <img src="2.png" /></a>
+            </div>
+            <hr>
+
+            <div class="projImage">
+                <a target="_blank" href="thisIsDigital.html"> <img src="3.png" /></a>
+            </div>
+            <hr>
+            <div class="projImage">
+                <a target="_blank" href="lagunitas.html"> <img src="4.png" /></a>
+            </div>
+            <hr>
+            <div class="projImage">
+                <a target="_blank" href="sketch.html"> <img src="5.png" /></a>
+            </div>
+            <hr>
+            <div class="projImage">
+                <a target="_blank" href="photography.html"> <img src="6.png" /></a>
+            </div>
+            <hr>
+            <div class="projImage">
+                <a target="_blank" href="seven.html"> <img src="7.png" /></a>
+            </div>
+            <hr>
+
+    </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+        integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
+        integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+        integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="test.js"></script>
+
+
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+</body>
+
+</html>

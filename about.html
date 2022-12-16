@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Raushan | About</title>
+
+    <style>
+@font-face {
+    font-family: GlowBetter;
+    src: url(GlowBetter-jEeLO.otf);
+} 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #000;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1666866011772-7c9442d479bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.one {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("	https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* display: flex;
+        justify-content: center;
+        align-items: center; */
+}
+
+.one .navBar {
+
+    color: rgb(255, 255, 255);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vmax;
+
+}
+
+.main a{
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+    color: inherit;
+    font-size: .8vmax;
+}
+
+.one .navBar ul {
+    display: flex;
+    list-style: none;
+}
+
+.one .navBar>h1 {
+    font-family: GlowBetter;
+    font-size: 3vmax;
+    letter-spacing: 2px;
+    transition: .3s all ease-in-out;
+}
+
+.one .navBar>h1:hover {
+    opacity: .9;
+    scale: .90;
+}
+
+.one .navBar li {
+    font-size: .6vmax;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0 1.5vmax;
+    position: relative;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+    padding-bottom: .25vmax;
+}
+
+.one .navBar li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: aqua;
+    transition: .3s all ease-in-out;
+}
+
+.one .navBar li:hover::after {
+    width: 100%;
+}
+
+.one .center {
+
+    color: #fff;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+}
+
+.one .left,
+.one .right {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.one .right {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.one .right h1 {
+    font-size: 10vmax;
+}
+
+.one .right p {
+    font-size: 1.3vmax;
+    width: 60%;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 1vmax 1vmax;
+
+}
+
+.one .left img {
+    height: 30vmax;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+
+.two {
+    width: 98vw;
+    height: 35vh;
+    margin: 0 auto;
+    border-radius: 5vmax;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+
+}
+
+.two p {
+    font-size: 6vmax;
+    font-weight: 800;
+
+}
+
+.two i {
+    font-size: 2vmax;
+}
+
+
+.three {
+    width: 98vw;
+    height: 150vh;
+    border-radius: 5vmax;
+    margin: 1vw 1vw;
+ 
+   
+}
+
+.three .content {
+    position: relative;
+    margin: 1vmax 0;
+    width: 100%;
+    height: 24.5%;
+    /* background-color: #000000; */
+    border-radius: 5vmax;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.three .content .left {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    color: #ffffff;
+
+    background-color: #000;
+
+    border-radius: 5vmax;
+
+
+    margin-right: -7vmax;
+}
+
+.three .content .left h1 {
+    letter-spacing: 2px;
+    font-size: 3vmax;
+}
+
+.three .content .right {
+
+    position: absolute;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    z-index: 50;
+    background-color: #eaeaea;
+    color: rgb(46, 46, 46);
+    border-radius: 5vmax;
+
+    margin-left: -7vmax;
+
+}
+
+.three .content .right p {
+
+    font-size: 1.4vmax;
+    line-height: 2vmax;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 3vmax;
+    width: 80%;
+}
+
+.four {
+    padding-top: 1vh;
+    height: 180vh;
+    width: 98vw;
+    border-radius: 5vmax;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+
+    /* overflow-y: auto; */
+    /* background-color: rgb(153, 28, 182); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: relative;
+}
+
+.four .top {
+    height: 20vh;
+    width: 98vw;
+
+    white-space: nowrap;
+
+
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.four .top h1 {
+    font-size: 9vmax;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0);
+    letter-spacing: 2px;
+    margin-left: 30px;
+    text-transform: uppercase;
+
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 2px;
+
+    display: inline-block;
+
+    animation-name: certificate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes certificate {
+    0% {
+        transform: translateX(calc(-100% - 32px));
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.four .top::-webkit-scrollbar {
+    display: none;
+}
+
+
+.four .left {
+    height: 65vh;
+    width: 65vh;
+    position: absolute;
+    border-radius: 50%;
+
+    right: 12%;
+    top: 14%;
+}
+
+.four .mid {
+    height: 65vh;
+    width: 65vh;
+    position: absolute;
+    border-radius: 50%;
+
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    top: 35%;
+    left: 10%;
+}
+
+.four .right {
+    height: 65vh;
+    width: 65vh;
+    position: absolute;
+    border-radius: 50%;
+
+    background-color: rgb(156, 92, 92);
+
+
+    top: 61%;
+    right: 11%;
+}
+
+.four .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.871);
+    color: #000;
+    transition:.5s all ease-in-out;
+    transform: scale(1.1);
+}
+.four .data:hover{
+    background-color: rgb(255, 244, 202);
+}
+
+.four .data h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2vmax;
+}
+
+.four .data p {
+    width: 70%;
+    text-align: center;
+    margin-top: 2vmax;
+    line-height: 2vmax;
+    font-size: 1.5vmax;
+    font-weight: 300;
+}
+
+.five {
+
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12vw;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.five i:hover {
+    transform: scale(1.5);
+    color: #ff5e5e;
+
+}
+
+.five i {
+    margin: 0 1vmax;
+    transition: .2s all ease-in-out;
+    font-size: 2.5vmax;
+}
+
+.five>a {
+    font-size: 1.6vmax;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+    color: inherit;
+    font-size: 2vmax;
+    margin: 1vmax 0;
+}
+
+.main .navBar>i{
+    display: none;
+}
+
+.main .one .navBar > a{
+    display: none;
+    /* font-size: 4vmax; */
+}
+.main li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: red; */
+    /* margin: 0 10px; */
+}
+@media (max-width:420px) {
+    
+    .main .one .navBar ul{
+        display: none;
+    }
+    .main .one .navBar{
+        padding: 0 4vmax;
+    }
+
+    .main .one .navBar > i{
+        display: initial;
+        font-size: 4vmax;
+    }
+    .main .one .navBar > a{
+        display: initial;
+        font-size: 4vmax;
+    }
+
+    .main .one .center{
+        /* background-color: red; */
+        height: 70vh;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .main .one .center img{
+        margin: 0;
+    }
+    .main .one .right{
+
+        padding: 0;
+        width: 80%;
+        align-items: center;
+    }
+    .main .one .center h1{
+        margin: 1vmax 0;
+    }
+    .main .one .center p{
+
+        width: 90%;
+        text-align: center;
+        margin: 1vmax 0;
+        font-size: 1.4vmax;
+        line-height: 1.8vmax;
+    }
+    .main .three{
+        height: 120vh;
+    }
+    .main .three .content{
+
+        flex-direction: column;
+
+        height: 24.5%;
+  
+    }
+    .main .three .content .left{
+        position: relative;
+        flex-direction: column;
+
+        width: 100%;
+        height: 30%;
+
+        margin-right: 0vmax;
+        margin-left: 77%;
+    }
+    .main .three .content .right{
+        position: relative;
+        flex-direction: column;
+        background-color: transparent;
+        /* background-color: rgb(30, 131, 106); */
+        width: 100%;
+
+        margin-left: 0vmax;
+
+    }
+    .main .three .content p{
+        font-size: 1.6vmax;
+    }
+
+    /* .main .three .content .left{
+        margin-left: 77%;
+    } */
+    .main .three .content .right p{
+        margin-right: 140%;
+        background-color: #ffffff;
+        padding: 4vmax;
+        border-radius: 5vmax;
+    }  
+
+    .main .four .data{
+        /* scale: .3; */
+        transform: scale(.8);
+        /* height: 40vh;
+        width: 40vh; */
+    }
+
+    .main .four .data p{
+        font-size: 2.5vmax;
+        line-height: 3vmax;
+    }
+    .main .four .data h1{
+        font-size: 3vmax;
+        line-height: 3vmax;
+    }
+    .main .four .left{
+        top: 6%;
+        left: -23%;
+    }
+    .main .four .mid{
+        top: 34%;
+        left: 1%;
+    }
+    .main .four .right{
+        top: 60%;
+    left: -25%;
+    }
+
+   
+
+    
+
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="one">
+
+          <div class="navBar">
+                <h1>Raushan.</h1>
+                <ul>
+                    <a href="index.html">
+                        <li>
+                            <lord-icon src="https://cdn.lordicon.com/gmzxduhd.json" trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff" style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>HOME</p>
+                        </li>
+                    </a>
+
+                    <a href="about.html">
+                        <li>
+                               <lord-icon
+                                src="https://cdn.lordicon.com/wxnxiano.json"
+                                trigger="morph"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>ABOUT</p>
+                        </li>
+                    </a>
+
+                    <a href="project.html">
+                        <li>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/gqdnbnwt.json"
+                                trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>PROJECTS</p>
+                        </li>
+                    </a>
+
+
+                    <a href="contact.html">
+                        <li>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/zpxybbhl.json"
+                                trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:25px;height:25px">
+                            </lord-icon>
+                            <p>CONTACT</p>
+                        </li>
+                    </a>
+
+                </ul>
+                <a href="index.html"><i class="ri-home-line resOneIcon"></i></a>
+            </div>
+
+
+
+ 
+            <div class="center">
+
+                <div class="left">
+                    <img src="profile.jpg" alt="">
+                </div>
+
+                <div class="right">
+                    <h1> Hello</h1>
+                    <p>I'm Raushan , and I create websites for businesses
+                        and organizations , I help to build websites for people all over the world</p>
+                    <p>Passionate about web technologies. I love working with startups and build new products. I create
+                        memorable web experiences.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="two">
+            <p>My Skills</p>
+            <i class="ri-arrow-down-s-line"></i>
+        </div>
+
+        <div class="three">
+
+            <div class="content onee">
+                <div class="left">
+                    <h1>UI / UX</h1>
+                </div>
+                <div class="right">
+                    <p>Before creating any product, it’s important to have a design. This is why I work with my clients
+                        from scratch and my first stage is to create a design version of the future product.</p>
+                </div>
+            </div>
+
+            <div class="content twoo">
+                <div class="left">
+                    <h1>DEVELOPMENT</h1>
+                </div>
+                <div class="right">
+                    <p>Once the design is ready, it’s time to make your concept live. This is when my programming skills
+                        will be needed. I transform any designs to a high-quality end products with pixel-perfect check.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content threee">
+                <div class="left">
+                    <h1>TRADING</h1>
+                </div>
+                <div class="right">
+                    <p> Analytical skills to monitor broad economic factors and day-to-day chart patterns that impact
+                        financial markets. Ability to focus and concentrate, particularly in a chaotic, fast-moving
+                        environment, is an underappreciated but crucial skill for traders.</p>
+                </div>
+            </div>
+
+            <div class="content fourr">
+                <div class="left">
+                    <h1>MUSIC</h1>
+                </div>
+                <div class="right">
+                    <p>Apart from Technicall Skills , I love to listen music . I do play guitar and sing as well and
+                        performed at many places. </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="four">
+            <div class="top">
+                <h1>Certifications</h1>
+                <h1>Certifications</h1>
+                <h1>Certifications</h1>
+
+            </div>
+            <div class="data left">
+                <h1>Cpp | Programming Language</h1>
+                <p>I have completed the Cpp Nano degree certification course from prepInsta , There I get to know about basics of C++ programming language
+                    how we can deal with our real life problems with the help of code 
+                </p>
+            </div>
+            <div class="data mid">
+                <h1>Elite Trader | Booming Bulls Academy</h1>
+                <p>I have completed this course in between march 2021 and june 2021 . There I came to know about NSE and BSE . I Learned everything which were required before trading , I gained 3-4 months experience 
+                    in live market . 
+                </p>
+            </div>
+            <div class="data right">
+                <h1>TCS ION | Importance of <br> Technology in Public Sector </h1>
+                <p>I got this opportunity to explore TCS ION , and then I choosed a topic that was Importance of technologies in public sectors organisations </p>
+            </div>
+        </div>
+
+        <div class="five">
+            <a href="index.html">  Raushan | Portfolio  </a>
+             <div class="icons">
+               <a href="https://www.facebook.com/profile.php?id=100006877326522" target="_blank"><i
+                   class="ri-facebook-fill"></i></a>
+               <a href="https://www.instagram.com/raush3019/" target="_blank"><i class="ri-instagram-fill"></i></a>
+               <a href="https://www.linkedin.com/in/raushan-kumar-99664621a/" target="_blank"><i
+                   class="ri-linkedin-fill"></i></a>
+             </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+        integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+    <script>
+
+
+
+function show() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+    const locoScroll = new LocomotiveScroll({
+        el: document.querySelector(".main"),
+        smooth: true
+    });
+    // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+    locoScroll.on("scroll", ScrollTrigger.update);
+
+    // tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
+    ScrollTrigger.scrollerProxy(".main", {
+        scrollTop(value) {
+            return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+        }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+        getBoundingClientRect() {
+            return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+        },
+        // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+        pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
+    });
+
+
+    // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+    // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+    ScrollTrigger.refresh();
+
+}
+show()
+gsap.from(".main .one .navBar", {
+    duration: 1,
+    y: -100,
+})
+
+
+gsap.from(".main .one .center", {
+    duration: 1,
+    scale: 0,
+})
+gsap.from(".main .two i", {
+    y:40,
+    opacity:0,
+    repeat:-1,
+    yoyo:true
+})
+
+
+gsap.to(".three .onee .left",{
+
+    scrollTrigger:{
+        trigger:".three .onee .left",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:-400,
+    duration:.01
+
+})
+
+
+gsap.to(".three .onee .right",{
+
+    scrollTrigger:{
+        trigger:".three .onee .right",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:400,
+    // duration:.01
+
+})
+
+
+gsap.to(".three .twoo .left",{
+
+    scrollTrigger:{
+        trigger:".three .twoo .left",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:-400,
+    duration:.01
+
+})
+
+
+gsap.to(".three .twoo .right",{
+
+    scrollTrigger:{
+        trigger:".three .twoo .right",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:400,
+    // duration:.01
+
+})
+
+
+gsap.to(".three .threee .left",{
+
+    scrollTrigger:{
+        trigger:".three .threee .left",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:-400,
+    duration:.01
+
+})
+
+
+gsap.to(".three .threee .right",{
+
+    scrollTrigger:{
+        trigger:".three .threee .right",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:400,
+    // duration:.01
+
+})
+
+
+gsap.to(".three .fourr .left",{
+
+    scrollTrigger:{
+        trigger:".three .fourr .left",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:-400,
+    duration:.01
+
+})
+
+
+gsap.to(".three .fourr .right",{
+
+    scrollTrigger:{
+        trigger:".three .fourr .right",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:400,
+    // duration:.01
+
+})
+
+
+gsap.from(".four .left",{
+
+    scrollTrigger:{
+        trigger:".four .left",
+        scroller:".main",
+    },
+    opacity:0,
+    x:400,
+    duration:.5
+
+})
+gsap.from(".four .right",{
+
+    scrollTrigger:{
+        trigger:".four .right",
+        scroller:".main",
+    },
+    opacity:0,
+    x:400,
+    duration:.5
+
+})
+
+gsap.from(".four .mid",{
+
+    scrollTrigger:{
+        trigger:".four .mid",
+        scroller:".main",
+    },
+    opacity:0,
+    x:-400,
+    duration:.5
+})
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+<!-- <div class="center">
+    <div class="left">
+        <img src="https://static.wixstatic.com/media/0b2ab67fc74f4858bfc215cfcb90ff1a.jpg/v1/fill/w_990,h_1028,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0b2ab67fc74f4858bfc215cfcb90ff1a.jpg"
+            alt="Network Issue">
+    </div>
+    <div class="right">
+        <p>I'm Raushan , and I create websites for small businesses 
+        and organizations , I help to build websites for people all over the world
+         . </p>
+
+        <p>
+        I'm a student and persuing my B-tech in Electrical & Electronic branch from Technocrats Institute of Bhopal and will graduate in 2023 , 
+        I have completed my Higher and Secondary Higher schooling in 2016 and 2018 from my home 
+        town Garhwa and Patna . </p>
+    </div>
+</div> -->

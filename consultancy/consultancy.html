@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raushan | Consultancy</title>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.main{
+    height: 100%;
+    width: 100%;  
+    /* background-color: aqua; */
+}
+
+.nav{
+    color: white;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(122, 173, 218);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vmax 6vmax;
+    align-items: center;
+    letter-spacing: 2px;
+    /* font-weight: 400; */
+    position: relative;
+}
+.nav > ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1vmax;
+}
+.nav > ul > li{
+    display: flex;
+    align-items: center;
+    padding: 0 1vmax;
+}
+.nav > i{
+    display: none;
+}
+.nav > h3{
+    font-size: 1.5vmax;
+    font-weight: 400;
+}
+.icn{
+    font-size: 1.8vmax;
+    padding-left: 2vmax;
+}
+
+.drop {
+    margin-top: 2vmax;
+    /* background-color: red; */
+    position: absolute;
+    right: 10%;
+    font-size: 2.5vw;
+    padding: 1vh;
+    list-style: none;
+    overflow: hidden;
+    /* display: none; */
+    transition: .9s all ease-in-out;
+    /* background-color: red; */
+    /* width: 20%; */
+    height: 0vmax;
+   
+   /* transform: s; */
+   /* transition: .5s all ease-in-out; */
+
+}
+/* .menu{
+    /* transform: scale(0); */
+    
+
+.drop > li{
+    padding: 1vmax 1vmax;
+    transition: .5s linear ease-in-out;
+}
+.center{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1534065101271-ba29bb6c7c13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 55%;
+    background-color: white;
+    padding: 0 2vmax;
+    color: rgb(42, 42, 112);
+}
+.box>h4{
+    font-weight: 200;
+    font-size: 2vmax;
+    letter-spacing: 0.5px;
+}
+.box>h2{
+    font-weight: 300;
+    font-size: 4vmax;
+    letter-spacing: 4px;
+}
+.box>button{
+    font-weight: 600;
+    font-size: 1vmax;
+    background-color: transparent;
+    padding: 1.2vmax 3vmax;
+    color:rgb(42, 42, 112);
+    border: 1px solid black;
+}
+.first{
+    height: 80%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin: 3vmax 0;
+    
+}
+.first > .data{
+    height: 90%;
+    width: 30%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vmax 2vmax;
+    border: 1px solid rgb(140, 140, 140);
+
+}
+.first >.data > h1{
+    font-weight: 200;
+    font-size: 2.5vmax;
+    letter-spacing: 1px;
+    opacity: .8;
+}
+.first >.data > p{
+    font-weight: 100;
+    margin: 3vmax 0;
+    line-height: 1.7vmax;
+    /* color: yellow; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.first >.data > button{
+    font-weight: 400;
+    font-size: 1.5vmax;
+    padding: 1vmax 3vmax;
+    border: none;
+    color: white;
+    background-color: rgb(122, 173, 222);
+}
+
+.second{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1534066519516-fc7b4cc6062c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: contrast(80%) brightness(120%) ;
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* border-bottom: vmax solid white; */
+}
+
+.second >  .data{
+    /* background-color: red; */
+    padding: 6vmax 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 2vmax; */
+    /* background-color: red; */
+}
+
+.second > .data > h2{
+    font-size: 3vmax;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.second > .data > button{
+    font-size: 1.5vmax; 
+    padding: 1vmax 3vmax;  
+    background-color: transparent;
+    border: solid 1px black;
+    margin: 6vmax 0;
+}
+.p1{
+    font-weight: 100;
+    letter-spacing: 1px;
+    /* padding: 3vmax 0; */
+    margin-top: 2vmax;
+}
+.p2{
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: 2vmax;
+}
+.client{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.comp{
+    display: flex;
+}
+.comp1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 8vmax 8vmax;
+    font-size: 2vmax;
+    font-weight: 200;
+    color: rgb(100, 99, 99);
+
+}
+.client>h1{
+    font-size: 3vmax;
+    font-weight: 200;
+    color: rgb(56, 56, 56);
+}
+
+.testimonial{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.lft , .ryt{
+    font-size: 5vmax;
+    font-weight: 100;
+}
+.mid{
+    height: 80%;width: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    align-items: center;
+
+/* 
+    font-size: 1vw;
+    font-weight: 100; */
+
+}
+.midup>h1{
+    font-size: 3vmax;
+    /* color: red; */
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.midCen{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.midCen > p{
+    font-size: 1.2vmax;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.temp{
+    height: 30%;
+    /* width: 60%; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temp > h2{
+    font-size: 1.3vmax;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgb(138, 138, 213);
+}
+.temp > p{
+    font-size: 1.1vmax;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.midLow > ul{
+    display: flex;
+    list-style: none;   
+    
+}
+
+.midLow > ul > li{
+    height: 10vmax;
+    /* width: 10vw; */
+    font-size: 10vmax;
+    border-radius: 50%;
+}
+
+@media (max-width:600px) {
+    
+
+    .nav > ul {
+        display: none;
+    }
+    .nav >i{
+        display: initial;
+    }
+    .box{
+        
+        /* background-color: green; */
+        height: 40%;
+        width: 75%;
+    }
+    .center{
+        width: 100%;
+        height: 50%;
+    }
+    .box > h2{
+        font-size: 4vw;
+    }
+    .box >h4{
+        font-size: 4vw;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        font-size: 2vmax;
+        width: 100%;
+        height: 120%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0;
+        padding: 0 0;
+        /* background-color: blue; */
+    }
+    .first > .data{
+        width: 70%;
+        height: 120%;
+        display: flex;
+        justify-content: center;
+        /* line-height: 1vmax; */
+        /* background-color: red; */
+        border: none;
+    }
+    .first > .data > p{
+        font-size: 1.8vmax;
+        line-height: 2.5vmax;
+    }
+    .second{
+        height: 80%;
+    }
+    .second > .data {
+        width: 90%;
+        height: 100%;
+        font-size: 1.7vmax;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+    }
+    .comp{
+        margin-top: 5vmax;
+        flex-direction: column;
+    }
+    .client{
+        margin: 8vmax 0;
+        /* font-size: 4vmax; */
+    }
+    .client > h1{
+        font-size: 4vmax;
+    }
+    .comp1{
+        /* margin: 1vmax 0; */
+        border: none;
+        font-size: 3vmax;
+        padding: 5vmax;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="main">
+        <div class="nav">
+            <h3>RAUSH CONSULTING</h3>
+
+            <ul>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Services</li>
+                <li>Plans & Pricing</li>
+                <li>Tool & Tips</li>
+                <li>Contact</li>
+                <i class="fa-solid fa-circle-user icn"></i>
+                <li>Log In</li>
+            </ul>
+            <i class="fa-solid fa-bars menu">
+                <ul class="drop" >
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Services</li>
+                    <li>Plans & Pricing</li>
+                    <li>Tool & Tips</li>
+                    <li>Contact</li>
+                    <!-- <i class="fa-solid fa-circle-user icn"></i> -->
+                    <li>Log In</li>
+                </ul>
+            </i>
+        </div>
+
+        <div class="center">
+            <div class="box">
+                <h4>Developing Innovative Strategies</h4>
+                <h2>ACHIEVING GROWTH</h2>
+                <button>Book A Consulation</button>
+            </div>
+        </div>
+
+        <div class="first">
+            <div class="data">
+                <h1>SERVICES</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                <button>More Info</button>
+            </div>
+            <div class="data">
+                <h1>PROJECTS</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                <button>More Info</button>
+            </div>
+            <div class="data">
+                <h1>CLIENTS</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                <button>More Info</button>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="data">
+                <h2>ABOUT US</h2>
+                <p class="p1" >
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                </p>
+                <p class="p2" >​
+
+                    This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+                </p>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <div class="client">
+            <h1>OUR CLIENTS</h1>
+            <div class="comp">
+                <div class="comp1">KENO</div>
+                <div class="comp1">LENDO</div>
+                <div class="comp1">DMC</div>
+                <div class="comp1">Athos</div>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <div class="lft"><</div>
+            <div class="mid">
+                <div class="midup">
+                    <h1>TESTIMONIALS</h1>
+                </div>
+                <div class="midCen">
+                    <p>
+                        “I'm a testimonial. Click to edit me and add text that <br> says something nice about you and your services.”
+                    </p>
+                    <div class="temp">
+                        <h2>Project Manager</h2>
+                        <p>Raushan</p>
+                    </div>
+                </div>
+                <div class="midLow">
+                    <ul>
+                        <li>.</li>
+                        <li>.</li>
+                        <li>.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ryt">></div>
+        </div>
+
+       
+
+    </div>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+    integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+    integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

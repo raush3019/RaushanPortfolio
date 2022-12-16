@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Raushan | Craftsman</title>
+
+    <style>
+        *{
+    margin : 0;
+    padding : 0; 
+    box-sizing  : border-box;
+}
+html , body {
+   height : 100%;
+   width : 100%;
+   background-color: black;
+}
+.main{
+    background-color: black;
+    width: 100%;
+    min-height: 100%;
+    font-family: "Satoshi-Variable","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+
+
+
+.first{
+    height: 40vh;
+    width: 100vw;
+    color: #fff;
+    position: relative;
+}
+
+
+
+.first h3{
+    position: absolute;
+    top: 47%;
+    left: 39.5%;
+    font-size: 3.8vmax;
+    transform: translate(-50%,-50%);
+}
+.first h1{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 500;
+    font-size: 8vmax;
+}
+.second{
+    width: 98vw;
+    height: 57vh;
+    display: flex;
+    margin: 1vw 1vw;
+    color: rgb(0, 0, 0);
+    position: relative;
+
+}
+
+.second .left .scrolling{
+
+    width: 100%;
+    position: absolute;
+    top:35%;
+    left: 0;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+
+}
+
+.second .left .scrolling h1{
+    display: inline-block;
+    font-size: 100px;
+    margin-right: 30px;
+    animation-name: scroll;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.second .scrolling::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100% - 32px));
+    }
+}
+
+.second .left{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5vmax;
+    transition: .3s all ease-in-out;
+}
+.second .left >     h1{
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    font-weight: 400;
+    font-size: 1.6vmax;
+}
+.second .left h2{
+    position: absolute;
+    top: 12%;
+    right: 7%;
+    font-size: 2.4vmax;
+}
+.second .left h3{
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    font-weight: 400;
+}
+.second .left h4{
+    position: absolute;
+    font-size: 2.3vmax;
+    font-weight: 100;
+    bottom: 8%;
+    right:7%;
+}
+.second .right{
+    width: 50%;
+    height: 100%;
+    margin-left: 1vmax;
+}
+.second .right .rightTop{
+    width: 100%;
+    height: 49%;
+    margin-bottom: 2%;
+    display: flex;
+    
+}
+.second .right .rightBottom{
+    width: 100%;
+    height: 46%;
+    padding: 1vmax 0;
+    background-color: rgb(235, 235, 106);
+    border-radius: 5vmax;
+    position: relative;
+    transition: .3s all ease-in-out;
+}
+.second .right .rightTop .rightTopLeft{
+    width: 50%;
+    height: 100%;
+    margin-bottom: 1vmax;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5vmax;
+    position: relative;
+    transition: .3s all ease-in-out;
+}
+.second .right .rightTop .rightTopRight{
+    width: 49%;
+    height: 100%;
+    margin-left: 1%;
+    margin-bottom: 1vmax;
+    background-color: #1B1B1F;
+    border-radius: 5vmax;
+    position: relative;
+    color: #fff;
+    transition: .3s all ease-in-out;
+}
+
+.second .rightTopLeft h1 , .second .rightTopRight h1, .second .rightBottom h1{
+    position: absolute;
+    bottom: 20%;
+    left:10%;
+    font-size: 1.3vmax;
+    font-weight: 500;
+}
+
+
+.second .rightTopLeft h2 , .second .rightTopRight h2, .second .rightBottom h2{
+    position: absolute;
+    bottom: 20%;
+    right:10%;
+    font-size: 2.3vmax;
+    font-weight: 500;
+}
+
+
+.third{
+    width: 98vw;
+    height: 75vh;
+    margin:1vw 1vw;
+    border-radius: 5vmax;
+    background-color: #1B1B1F;
+    color: #ABA7FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5vmax;
+}
+.third .text{
+    width: 75%;
+    height: 75%;
+    font-size: 3.8vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.third h4{
+    font-size: 1.3vmax;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.third h2{
+    font-weight: 400;
+}
+
+.fourth{
+    width: 98vw;
+    height: 150vh;
+    border-radius: 5vmax;
+    margin:1vw 1vw;
+}
+.fourth .content{
+    position: relative;
+    margin: .5vmax 0;
+    width: 100%;
+    height:24.5%;
+    background-color: #1B1B1F;
+    border-radius: 5vmax;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+.fourth .content .left{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    color:#ABA7FF;
+    background-color: #1B1B1F;
+}
+.fourth .content .right{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    z-index: 50;
+    background-color: #ABA7FF;
+    color:rgb(46, 46, 46);
+    border-radius: 5vmax;
+}
+
+.fourth .content .left .text{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    margin-left: 3vmax;
+}
+.fourth .content .left .text h2{
+    font-size: 1.6vmax;
+    font-weight: 600;
+}
+.fourth .content .left .text p{
+    font-size: 1.2vmax;
+    line-height: 2vmax;
+}
+
+.fourth .content .right h4{
+    font-size: 1.3vmax;
+    font-weight: 400;
+    margin-bottom: vmax;
+
+}
+.fourth .content .right h2{
+    
+    font-size: 3vmax;
+    font-weight: 600;
+}
+
+.fifth{
+    width: 98vw;
+    height: 50vh;
+    margin:1vw 1vw;
+    border-radius: 5vmax;
+    background-color: #fff;
+    position: relative;
+    transition: .3s all ease-in-out;
+}
+.fifth img{
+    position: absolute;
+    height: 4vmax;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.fifth h1{
+    position: absolute;
+    top:12%;
+    left: 4%;
+    font-weight: 500;
+    font-size: 1.4vmax;
+}
+.fifth h2{
+    position: absolute;
+    top:12%;
+    right: 4%;
+    font-weight: 500;
+    font-size: 1.4vmax;
+}
+.fifth h3{
+    position: absolute;
+    bottom:12%;
+    left: 4%;
+    font-weight: 500;
+    font-size: 1.4vmax;
+}
+.fifth h4{
+    position: absolute;
+    bottom:12%;
+    right: 4%;
+    font-weight: 500;
+    font-size: 1.4vmax;
+}
+.sixth{
+    width: 100vw;
+    height: 82vh;
+    margin-left: 1vw;
+    
+    
+}
+.sixth .content{
+    position: relative;
+    display: inline-block;
+    width: 49vw;
+    height: 48%;
+    border-radius: 5vmax;
+    background-color: rgb(244, 244, 175); 
+    transition: .3s all ease-in-out;
+}
+.sixth .content img{
+    position: absolute;
+    height: 9vmax;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sixth .content:nth-child(1){
+    background-color: #CBE5FF;
+
+}
+.sixth .content:nth-child(2){
+    background-color: #021F23;
+    color: #78F3E2;
+}
+.sixth .content:nth-child(3){
+    background-color: #D0FF94;
+}
+.sixth .content:nth-child(4){
+    background-color: #290038;
+    color: #FCD6FF;
+}
+.sixth .content h1{
+    position: absolute;
+    top:15%;
+    left: 10%;
+    font-weight: 200;
+    font-size: 1.4vmax;
+}
+.sixth .content h2{
+    position: absolute;
+    top:15%;
+    right: 10%;
+    font-weight: 400;
+    font-size: 1.4vmax;
+}
+.sixth .content h3{
+    position: absolute;
+    bottom:15%;
+    left: 10%;
+    font-weight: 400;
+    font-size: 1.4vmax;
+}
+.sixth .content h4{
+    position: absolute;
+    bottom:15%;
+    right: 10%;
+    font-weight: 400;
+    font-size: 2.4vmax;
+}
+
+
+.second .left:hover,.second .rightBottom:hover,.second .rightTopLeft:hover , .second .rightTopRight:hover{
+    transform: scale(.95);
+    cursor: pointer;
+}
+.fifth:hover , .sixth .content:hover{
+    transform: scale(.95);
+    cursor: pointer;
+}
+.nine .right:hover{
+    transform: scale(.95);
+    cursor: pointer;
+}
+
+
+
+
+.loader{
+    z-index: 40;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 1s top ease-out;
+}
+.loader h1{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    font-size: 8vmax;
+}
+.loader .horizont{
+    top: 20%;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 6px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+.loader .vertical{
+    position: absolute;
+    transform: rotate(90degree);
+    left: 10%;
+    width: 6px;
+    height: 100%;
+    background-color: white;
+    border-left:1px solid black;
+    border-right:1px solid black;
+}
+
+
+.seventh{
+
+    width: 98vw;
+    height: 154vh;
+    margin:0vw 1vw;
+    border-radius: 5vmax;
+    color: pink;
+    display: flex;
+    background-color: #1c0126;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vw 0;
+    overflow: hidden;
+
+}
+.seventh .circle img{
+    rotate: 20deg;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.seventh .circle h3{
+    rotate: 20deg;
+
+    position: absolute;
+    font-size: 1.2vmax;
+    top: 85%;
+    color: pink;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.seventh .circle h5{
+    rotate: 20deg;
+    top: 93%;
+    position: absolute;
+    font-size: 1.2vmax;
+    color: pink;
+    left: 50%;
+    transform: translateX(-50%);
+}   
+
+.seventh > p{
+    margin-left: 10%;
+    width: 40%;
+    font-size: 2.5vmax;
+    font-weight: 300;
+    line-height: 3.5vmax;
+}
+.seventh .scrolling{
+
+    width: 100%;
+    top:10%;
+    left: 0;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+
+}
+.seventh .scrolling h1{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 180px;
+    margin-right: 30px;
+    animation-name: scroll;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.second .scrolling::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100% - 32px));
+    }
+}
+
+.seventh .design{
+
+    /* flex-wrap: wrap; */
+    white-space: nowrap;
+    height: 27vh;
+    width: 100%;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* rotate: -20deg; */
+    transform: rotate(-30deg);
+    /* transform: translateX(-10vmax); */
+    overflow: visible;
+
+}
+.seventh .design .circle{
+    border: 1px solid pink;
+    /* margin: 1vh 1vmax; */
+    display: inline-block;
+    height: 35vh;
+    width: 35vh;
+
+    white-space: nowrap;
+    border-radius: 50%;
+    /* animation-name: design;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+    overflow: hidden;
+
+    position: relative
+    /* display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end; */
+}
+/* @keyframes design {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100% - 32px));
+    }
+} */
+
+
+.eight{
+    width: 98vw;
+    height: 110vh;
+    margin:1vw 1vw;
+    border-radius: 5vmax;
+    color: #D4C951;;
+    display: flex;
+    background-color: #1D1C16;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vw 0;
+    overflow: hidden;
+    padding-left: 4vmax;
+
+}
+.eight>h4{
+    font-size: 1.5vmax;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.eight>p{
+    width: 60%;
+    font-size: 6vmax;
+}
+.eight .btns{
+
+
+    width: 50%;
+    height: 30%;
+    
+}  
+.eight .btns button{
+    background-color: transparent;
+    margin: 1vmax 1vmax;
+    padding: 1.5vmax 3vmax;
+    border-radius: 3vmax;
+    font-size: 1.5vmax;
+    position: relative;
+    color: #FFF480;
+    border: 1px solid #FFF480;
+    overflow: hidden;
+    z-index: 200;
+}
+
+.eight .btns button::before{
+    z-index: 40;
+    content: "";
+    border-radius: 5vmax;
+    height: 100%;
+    width: 100%;
+    background-color: #FFF480;;
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    z-index: -1;
+    transition: .3s all ease-in-out;
+}
+
+.eight .btns button:hover::before{
+    top:0%;
+    z-index: -10;
+
+}  
+.eight .btns button:hover{
+    color: rgb(0, 0, 0);
+} 
+
+
+
+
+.eight i{
+    z-index: 100;
+    font-size: 2vmax;
+    margin: 0 2vmax;
+    /* padding: 1.5vmax 3vmax; */
+    color: #D4C951;
+}
+
+.nine{
+    width: 98vw;
+    height: 70vh;
+    margin:1vw 1vw;
+    border-radius: 5vmax;   
+    color: #D4C951;
+    display: flex;
+    background-color: #060606;;
+    overflow: hidden;
+}
+
+.nine .left{
+    overflow: hidden;
+    width: 75%;
+    height: 100%;
+    border-radius: 5vmax;
+    color: #FFF480;
+}
+.nine .right{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 1%;
+    width: 25%;
+    height: 100%;
+    transition: .3s all ease-in-out;
+    background-color: #FFF480;
+    color: black;
+    border-radius: 5vmax;
+}
+.nine .right h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nine .right h3 i{
+    font-size: 2vmax;
+    margin-bottom: 2vmax;
+}
+.nine .leftTop{
+    width: 100%;
+    height: 25%;
+    border-radius: 5vmax;
+    display: flex;
+    justify-content: space-between;
+}
+.nine .leftBtm{
+    width: 100%;
+    margin-top: 1%;
+    height: 74%;
+    border-radius: 5vmax;
+    padding: 3vmax;
+    font-weight: 300;
+    font-size: 1.7vmax;
+    background-color: #1D1C16;
+}
+
+.nine .detail{
+    font-size: 1.3vmax;
+    padding: 4vmax;
+    border-radius: 5vmax;
+    height: 100%;
+    width: 33%;
+    background-color: #1D1C16;
+
+}
+ 
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80vw;
+    align-items: center;
+    height: 15vh;
+    color: white;
+
+}
+.footer h5{
+    font-style: 1.4vmax;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- this is the webiste === https://www.thecraftsmen.tech/ -->
+
+
+
+    <div class="loader">
+        <h1> <span>0</span> % </h1>
+        <div class="horizont"></div>
+        <div class="vertical"></div>
+    </div>
+
+    <div class="main">
+
+        <div class="first">
+            <h3>THE</h3>
+            <h1>Craftsman</h1>
+        </div>
+
+        <div class="second">
+            <div class="left">
+                <h1>Craft CMS</h1>
+                <h2><i class="ri-funds-line"></i></h2>
+                <h3>See our services</h3>
+                <h4><i class="ri-arrow-down-line"></i></h4>
+                <div class="scrolling" behavior="scroll" direction="left" >
+                    <h1>We are specialized in craft CMS.</h1>
+                    <h1>We are specialized in craft CMS.</h1>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="rightTop">
+                    <div class="rightTopLeft">
+                        <h1>Work</h1>
+                        <h2><i class="ri-task-line"></i></h2>
+                    </div>
+                    <div class="rightTopRight">
+                        <h1>About us</h1>
+                        <h2><i class="ri-hotel-line"></i></h2>
+                    </div>
+                </div>
+                <div class="rightBottom">
+                    <h1>Contact us </h1>
+                    <h2><i class="ri-arrow-right-line"></i></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="third">
+            <h4>WHAT WE DO</h4>
+            <div class="text">
+                <h2>We provide clients</h2>
+                <h2>with stunning <i>Crafty</i> web</h2>
+                <h2>solutions, developed</h2>
+                <h2>with <i>skill & passion</i>.</h2>
+            </div>
+        </div>
+
+        <div class="fourth">
+
+            <div class="content one">
+                <div class="left">
+                    <h1><i class="ri-focus-2-line"></i></h1>
+                    <div class="text">
+                        <h2>Craft CMS</h2>
+                        <p>We are focused on developing, from start to finish, web solutions with Craft CMS, an easy to
+                            use content management system where admins can alter or add content to a website.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <h4>We are experts in</h4>
+                    <h2> <i>craft cms</i> </h2>
+                </div>
+            </div>
+
+            <div class="content two">
+                <div class="left">
+                    <h1><i class="ri-customer-service-line"></i></h1>
+                    <div class="text">
+                        <h2>Fast Support</h2>
+                        <p>We aim to be as available and supportive as we can to our clients. Feel free to use the form
+                            below or contact us directly with questions or requests.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <h4>We are always</h4>
+                    <h2>happy to help you</h2>
+                </div>
+            </div>
+
+            <div class="content three">
+                <div class="left">
+                    <h1><i class="ri-skull-line"></i></h1>
+                    <div class="text">
+                        <h2>Custom Designs</h2>
+                        <p>Our design team is skilled at customizing existing designs, as well as producing stunning,
+                            award-winning brand-new designs.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <h4>In partnership with</h4>
+                    <h2>kaploom</h2>
+                </div>
+            </div>
+
+            <div class="content four">
+                <div class="left">
+                    <h1><i class="ri-eye-line"></i></h1>
+                    <div class="text">
+                        <h2>SEO</h2>
+                        <p>Using our expertise along with handy tools we strive for a high SEO score, ensuring higher
+                            visibility on search sites such as Google.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <h4>With our SEO knowledge</h4>
+                    <h2>you will be seen</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="fifth">
+            <h1>01.</h1>
+            <h2>Featured</h2>
+            <h3>Launch Project</h3>
+            <h4><i class="ri-arrow-right-up-line"></i></h4>
+            <img src="	https://www.thecraftsmen.tech/img/kaploom-black.svg" alt="">
+        </div>
+
+        <div class="sixth">
+            <div class="content">
+                <h1>02.</h1>
+                <h2>Showcase</h2>
+                <h3>Launch Project</h3>
+                <h4><i class="ri-arrow-right-up-line"></i></h4>
+                <img src="https://www.thecraftsmen.tech/img/Gostolen.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>03.</h1>
+                <h2>showcase</h2>
+                <h3>Launch Project</h3>
+                <h4><i class="ri-arrow-right-up-line"></i></h4>
+                <img src="https://www.thecraftsmen.tech/img/dream-well-logo.svg" alt="">
+            </div>
+            <div class="content">
+                <h1>04.</h1>
+                <h2>showcase</h2>
+                <h3>Project in Progress</h3>
+                <h4><i class="ri-arrow-right-up-line"></i></h4>
+                <img src="https://www.thecraftsmen.tech/img/creanntiv-logo.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>05.</h1>
+                <h2>showcase</h2>
+                <h3>Project in Progress</h3>
+                <h4><i class="ri-arrow-right-up-line"></i></h4>
+                <img src="	https://www.thecraftsmen.tech/img/Gjerde-camping.svg" alt="">
+            </div>
+        </div>
+
+        <div class="seventh">
+            <div class="scrolling" behavior="scroll" direction="left" >
+                <h1>Who are the Craftsman.</h1>
+                <h1>Who are the Craftsman.</h1>
+            </div>
+            <p>We are web developers with numerous years of experience working with Craft CMS on divergent projects for (international) companies in both Europe and the United States.</p>
+            
+            <div class="design">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle">
+                    <img src="	https://www.thecraftsmen.tech/img/dev-3.png" alt="">
+                    <h3>DEVELOPER</h3>
+                    <h5>Steven N.</h5>
+                </div>
+                <div class="circle">
+                    <img src="	https://www.thecraftsmen.tech/img/dev-2.png" alt="">
+                    <h3>DEVELOPER</h3>
+                    <h5>Jelle C.</h5>
+                </div>
+                <div class="circle">
+                    <img src="https://www.thecraftsmen.tech/img/tibo.png" alt="">
+                    <h3>CEO</h3>
+                    <h5>Tibo M.</h5>
+                </div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle">
+                    <img src="	https://www.thecraftsmen.tech/img/dev-3.png" alt="">
+                    <h3>DEVELOPER</h3>
+                    <h5>Steven N.</h5>
+                </div>
+                <div class="circle">
+                    <img src="	https://www.thecraftsmen.tech/img/dev-2.png" alt="">
+                    <h3>DEVELOPER</h3>
+                    <h5>Jelle C.</h5>
+                </div>
+                <div class="circle">
+                    <img src="https://www.thecraftsmen.tech/img/tibo.png" alt="">
+                    <h3>CEO</h3>
+                    <h5>Tibo M.</h5>
+                </div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+
+
+            <div class="design">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="eight">
+            <h4>GET IN TOUCH!</h4>
+            <p>Do you have a question, an idea, or a project you need help with?
+                <br> Contact us!</p>
+
+
+            <div class="btns">
+                <button>info@thecraftsmen.tech</button>
+                <button>+359 878 39 12 42</button>
+                <button><i class="ri-instagram-line"></i></button>
+                <button><i class="ri-facebook-circle-fill"></i></button>
+                <button><i class="ri-linkedin-box-fill"></i></button>
+            </div>
+
+        </div>
+
+        <div class="nine">
+            <div class="left">
+                <div class="leftTop">
+                    <div class="detail"><p>Name</p></div>
+                    <div class="detail"><p>E-mail</p></div>
+                    <div class="detail"><p>Subject</p></div>
+                </div>
+                <div class="leftBtm">
+                    <p type="text" >Message</p>
+                </div>
+
+            </div>
+            <div class="right">
+              <h3><i class="ri-send-plane-2-line"></i>   Send </h3>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h5>logo</h5>
+            <h5>Copyright 2022</h5>
+            <h5>Design</h5>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+        integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+        integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+        integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
+        integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+
+function show() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+    const locoScroll = new LocomotiveScroll({
+        el: document.querySelector(".main"),
+        smooth: true
+    });
+    // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+    locoScroll.on("scroll", ScrollTrigger.update);
+
+    // tell ScrollTrigger to use these proxy methods for the ".main" element since Locomotive Scroll is hijacking things
+    ScrollTrigger.scrollerProxy(".main", {
+        scrollTop(value) {
+            return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+        }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+        getBoundingClientRect() {
+            return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+        },
+        // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+        pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
+    });
+
+    // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+    // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+    ScrollTrigger.refresh();
+
+}
+show()
+
+
+
+
+
+
+
+
+gsap.to(".seventh .design",{
+    scrollTrigger:{
+        trigger:".seventh .design",
+        scroller:".main",
+        scrub:true,
+    },
+    x:200,
+    y:200,
+    rotate:20
+
+})
+
+
+
+var h = 0 , v = 0;
+
+setInterval(function(){
+    if(h > 100){
+        h = 0;
+    }
+    else{
+        document.querySelector(".loader .horizont").style.width = `${h++}%`;
+    }
+    
+}, 10);
+
+setInterval(function(){
+    if(v > 100){
+        v = 0;
+    }
+    else{
+        document.querySelector(".loader .vertical").style.height = `${v++}%`;
+    }
+    
+}, 10);
+
+
+
+
+setTimeout(function(){
+    document.querySelector(".loader").style.top = "-100%";
+}, 1000);
+
+var increment =0;
+
+setInterval(function(){
+    if(increment <= 100){
+        document.querySelector(".loader span").innerHTML = increment++;
+    }else{
+        increment = 100;
+    }
+    
+}, 10);
+
+
+gsap.to(".first",{
+    scrollTrigger:{
+        trigger:".first",
+        scroller:".main",
+        scrub:3,
+        start:"top 2%"
+    },
+    scale:0,
+    duration:1,   
+})
+
+gsap.to(".fourth .one .left",{
+
+    scrollTrigger:{
+        trigger:".fourth .one .left",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:-400,
+    duration:.01
+
+})
+
+
+gsap.to(".fourth .one .right",{
+
+    scrollTrigger:{
+        trigger:".fourth .one .right",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:400,
+    // duration:.01
+
+})
+
+
+gsap.to(".fourth .two .left",{
+
+    scrollTrigger:{
+        trigger:".fourth .two .left",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:-400,
+    duration:.01
+
+})
+
+
+gsap.to(".fourth .two .right",{
+
+    scrollTrigger:{
+        trigger:".fourth .two .right",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:400,
+    // duration:.01
+
+})
+
+
+gsap.to(".fourth .three .left",{
+
+    scrollTrigger:{
+        trigger:".fourth .three .left",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:-400,
+    duration:.01
+
+})
+
+
+gsap.to(".fourth .three .right",{
+
+    scrollTrigger:{
+        trigger:".fourth .three .right",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:400,
+    // duration:.01
+
+})
+
+
+gsap.to(".fourth .four .left",{
+
+    scrollTrigger:{
+        trigger:".fourth .four .left",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:-400,
+    duration:.01
+
+})
+
+
+gsap.to(".fourth .four .right",{
+
+    scrollTrigger:{
+        trigger:".fourth .four .right",
+        scroller:".main",
+        scrub:1,
+        // markers:true,
+    },
+    x:400,
+    // duration:.01
+
+})
+
+
+
+
+        </script>
+</body>
+
+</html>
